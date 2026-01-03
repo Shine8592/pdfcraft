@@ -1,0 +1,1356 @@
+{
+  "common": {
+    "brand": "PDFCraft",
+    "tagline": "Professional PDF Tools - Free & Private",
+    "navigation": {
+      "home": "Home",
+      "tools": "Tools",
+      "about": "About",
+      "faq": "FAQ",
+      "privacy": "Privacy",
+      "contact": "Contact"
+    },
+    "buttons": {
+      "upload": "Upload Files",
+      "download": "Download",
+      "process": "Process",
+      "cancel": "Cancel",
+      "reset": "Reset",
+      "clear": "Clear",
+      "selectLanguage": "Select Language",
+      "close": "Close",
+      "save": "Save",
+      "delete": "Delete",
+      "edit": "Edit",
+      "back": "Back",
+      "next": "Next",
+      "previous": "Previous",
+      "submit": "Submit",
+      "clearAll": "Clear All",
+      "remove": "Remove",
+      "selectAll": "Select All",
+      "deselectAll": "Deselect All",
+      "apply": "Apply",
+      "insertAtBeginning": "Insert at Beginning",
+      "insertAtEnd": "Insert at End",
+      "rotateAllLeft": "Rotate All Left",
+      "rotateAllRight": "Rotate All Right"
+    },
+    "status": {
+      "idle": "Ready",
+      "uploading": "Uploading...",
+      "processing": "Processing...",
+      "complete": "Complete",
+      "error": "Error",
+      "loading": "Loading..."
+    },
+    "footer": {
+      "footer": "© 2025 PDFCraft. All rights reserved.",
+      "copyright": "© {year} PDFCraft. All rights reserved.",
+      "privacyBadge": "100% Private - Files never leave your device",
+      "madeWith": "Made with <Heart /> and <Nextjs />"
+    },
+    "recentFiles": {
+      "title": "Recent Files",
+      "empty": "No recent files",
+      "clearAll": "Clear All",
+      "processedWith": "Processed with"
+    },
+    "savedProjects": {
+      "title": "Saved Projects",
+      "empty": "No saved projects",
+      "clearAll": "Clear All",
+      "resume": "Resume",
+      "delete": "Delete",
+      "inProgress": "In Progress",
+      "paused": "Paused",
+      "completed": "Completed",
+      "progress": "Progress",
+      "files": "files"
+    },
+    "batchProcessing": {
+      "title": "Batch Processing",
+      "addFiles": "Drop files here or click to add",
+      "clearAll": "Clear All",
+      "startProcessing": "Start Processing",
+      "cancelProcessing": "Cancel",
+      "downloadAll": "Download All",
+      "downloadZip": "Download as ZIP",
+      "pending": "Pending",
+      "processing": "Processing...",
+      "completed": "Completed",
+      "error": "Error",
+      "progress": "Overall Progress",
+      "filesSelected": "files selected",
+      "noFiles": "No files added yet. Add files to start batch processing."
+    },
+    "guidedTour": {
+      "startTour": "Start Tour",
+      "next": "Next",
+      "prev": "Back",
+      "finish": "Finish",
+      "skip": "Skip",
+      "stepOf": "of",
+      "welcomeTitle": "Welcome to PDFCraft!",
+      "welcomeMessage": "Would you like a quick tour to learn how to use our PDF tools? It only takes a minute.",
+      "helpButton": "Help Tour"
+    },
+    "search": {
+      "placeholder": "Search tools...",
+      "hint": "Press Enter to select, ↑↓ to navigate",
+      "noResults": "No tools found"
+    },
+    "accessibility": {
+      "skipToContent": "Skip to main content",
+      "skipToNavigation": "Skip to navigation",
+      "loading": "Loading, please wait",
+      "menuExpanded": "Menu expanded",
+      "menuCollapsed": "Menu collapsed",
+      "newWindow": "Opens in new window",
+      "externalLink": "External link",
+      "required": "Required field",
+      "optional": "Optional",
+      "selected": "Selected",
+      "notSelected": "Not selected",
+      "pageOf": "Page {current} of {total}",
+      "sortAscending": "Sort ascending",
+      "sortDescending": "Sort descending",
+      "closeDialog": "Close dialog",
+      "expandSection": "Expand section",
+      "collapseSection": "Collapse section"
+    },
+    "options": {
+      "auto": "Auto",
+      "portrait": "Portrait",
+      "landscape": "Landscape"
+    }
+  },
+  "faqPage": {
+    "title": "Frequently Asked Questions",
+    "subtitle": "Find answers to common questions about {brand}",
+    "searchPlaceholder": "Search FAQs...",
+    "noResults": "No FAQs found matching your search.",
+    "expandAll": "Expand All",
+    "collapseAll": "Collapse All",
+    "categories": {
+      "all": "All",
+      "general": "General",
+      "privacy": "Privacy & Security",
+      "features": "Features",
+      "technical": "Technical",
+      "languages": "Languages"
+    },
+    "sections": {
+      "general": {
+        "whatIs": {
+          "question": "What is PDFCraft?",
+          "answer": "PDFCraft is a free, privacy-focused PDF toolkit that runs entirely in your browser. It offers 67+ professional tools for editing, converting, merging, splitting, and securing PDF files without uploading them to any server."
+        },
+        "isFree": {
+          "question": "Is PDFCraft really free?",
+          "answer": "Yes, PDFCraft is completely free to use. There are no hidden costs, no premium tiers, and no registration required. All features are available to everyone."
+        },
+        "account": {
+          "question": "Do I need to create an account?",
+          "answer": "No, you don't need to create an account or register to use PDFCraft. Simply visit the website and start using any tool immediately."
+        }
+      },
+      "privacy": {
+        "uploaded": {
+          "question": "Are my files uploaded to a server?",
+          "answer": "No, your files are never uploaded to any server. All PDF processing happens locally in your browser using JavaScript and WebAssembly. Your files never leave your device."
+        },
+        "safe": {
+          "question": "Is it safe to use PDFCraft with sensitive documents?",
+          "answer": "Yes, PDFCraft is designed with privacy in mind. Since all processing happens locally in your browser, your sensitive documents remain on your device and are never transmitted over the internet."
+        },
+        "storage": {
+          "question": "What happens to my files after processing?",
+          "answer": "Your files are stored temporarily in your browser's memory during processing. Once you close the browser tab or navigate away, all file data is automatically cleared. We don't store any of your files."
+        }
+      },
+      "features": {
+        "operations": {
+          "question": "What PDF operations can I perform?",
+          "answer": "PDFCraft offers 67+ tools including: merge, split, compress, convert (to/from images, text, JSON), edit, annotate, sign, add watermarks, encrypt/decrypt, OCR, and many more."
+        },
+        "merge": {
+          "question": "Can I merge multiple PDF files?",
+          "answer": "Yes, you can merge multiple PDF files into one. Simply use the Merge PDF tool, upload your files, arrange them in the desired order, and click merge."
+        },
+        "images": {
+          "question": "Can I convert images to PDF?",
+          "answer": "Yes, PDFCraft supports converting various image formats (JPG, PNG, WebP, BMP, TIFF, SVG, HEIC) to PDF. You can convert single or multiple images at once."
+        },
+        "edit": {
+          "question": "Can I edit text in a PDF?",
+          "answer": "PDFCraft provides annotation and editing tools including highlighting, adding text, shapes, images, and signatures. For full text editing, the PDF Editor tool offers comprehensive annotation capabilities."
+        }
+      },
+      "technical": {
+        "browsers": {
+          "question": "What browsers are supported?",
+          "answer": "PDFCraft works on all modern browsers including Chrome, Firefox, Safari, and Edge. We recommend using the latest version of your browser for the best experience."
+        },
+        "sizeLimit": {
+          "question": "Is there a file size limit?",
+          "answer": "Most tools support files up to 100MB, with some tools like merge and compress supporting up to 500MB. These limits are in place to ensure smooth performance in your browser."
+        },
+        "slow": {
+          "question": "Why is processing slow for large files?",
+          "answer": "Since all processing happens in your browser, performance depends on your device's capabilities. Large files require more memory and processing power. For best results, close other browser tabs and applications."
+        },
+        "offline": {
+          "question": "Does PDFCraft work offline?",
+          "answer": "Currently, PDFCraft requires an internet connection to load the application. However, once loaded, the PDF processing itself happens locally and doesn't require a connection."
+        }
+      },
+      "languages": {
+        "supported": {
+          "question": "What languages are supported?",
+          "answer": "PDFCraft is available in 9 languages: English, Japanese, Korean, Spanish, French, German, Chinese, Portuguese, and Arabic (with RTL support)."
+        },
+        "change": {
+          "question": "How do I change the language?",
+          "answer": "You can change the language using the language selector in the header. Your preference will be saved for future visits."
+        }
+      }
+    },
+    "cta": {
+      "title": "Still have questions?",
+      "description": "Can't find the answer you're looking for? Feel free to reach out to us.",
+      "button": "Contact Us"
+    }
+  },
+  "aboutPage": {
+    "title": "About {brand}",
+    "description": "{brand} is a free, privacy-focused PDF toolkit that runs entirely in your browser. With {count}+ professional tools, you can edit, convert, merge, split, and secure your PDF files without ever uploading them to a server.",
+    "mission": {
+      "title": "Our Mission",
+      "p1": "We believe that everyone should have access to powerful PDF tools without compromising their privacy or paying expensive subscription fees. That's why we created {brand} – a comprehensive PDF toolkit that puts your privacy first.",
+      "p2": "Unlike traditional PDF services that require you to upload your files to remote servers, {brand} processes everything locally in your browser. Your sensitive documents never leave your device, giving you complete control over your data.",
+      "p3": "Whether you're a student, professional, or casual user, {brand} provides all the tools you need to work with PDFs efficiently and securely."
+    },
+    "values": {
+      "title": "Our Values",
+      "privacy": {
+        "title": "Privacy First",
+        "description": "Your files never leave your device. All processing happens locally in your browser, ensuring complete privacy and security."
+      },
+      "fast": {
+        "title": "Fast & Efficient",
+        "description": "Powered by modern web technologies, PDFCraft delivers lightning-fast PDF processing without the need for uploads or downloads."
+      },
+      "accessible": {
+        "title": "Accessible Everywhere",
+        "description": "Available in 9 languages and works on any device with a modern browser. No installation required."
+      },
+      "free": {
+        "title": "Free Forever",
+        "description": "PDFCraft is completely free to use with no hidden costs, no registration required, and no limits on usage."
+      },
+      "openSource": {
+        "title": "Open Source",
+        "description": "Built with transparency in mind. Our code is open source, allowing anyone to verify our privacy claims."
+      },
+      "community": {
+        "title": "Community Driven",
+        "description": "Developed with feedback from users around the world. We continuously improve based on your needs."
+      }
+    },
+    "technology": {
+      "title": "Built with Modern Technology",
+      "description": "{brand} is built using cutting-edge web technologies to ensure the best possible experience:",
+      "list": {
+        "nextjs": "<strong1>Next.js</strong1> - For fast, SEO-friendly page rendering",
+        "wasm": "<strong1>WebAssembly</strong1> - For near-native PDF processing performance",
+        "workers": "<strong1>Web Workers</strong1> - For non-blocking background processing",
+        "pdflib": "<strong1>pdf-lib & PDF.js</strong1> - Industry-standard PDF manipulation libraries",
+        "indexeddb": "<strong1>IndexedDB</strong1> - For secure local storage of your work"
+      },
+      "summary": "This combination of technologies allows us to provide professional-grade PDF tools that run entirely in your browser, without any server-side processing."
+    },
+    "cta": {
+      "title": "Ready to Get Started?",
+      "description": "Explore our {count}+ PDF tools and see what {brand} can do for you.",
+      "button": "Browse All Tools"
+    }
+  },
+  "contactPage": {
+    "hero": {
+      "title": "Contact Us",
+      "description": "Have a question, suggestion, or found a bug? We'd love to hear from you."
+    },
+    "methods": {
+      "email": {
+        "title": "Email",
+        "description": "Send us an email and we'll respond within 24-48 hours.",
+        "action": "contact@pdfcraft.app"
+      },
+      "github": {
+        "title": "GitHub",
+        "description": "Report bugs, request features, or contribute to the project.",
+        "action": "View on GitHub"
+      },
+      "twitter": {
+        "title": "Twitter",
+        "description": "Follow us for updates and announcements.",
+        "action": "@pdfcraft"
+      }
+    },
+    "form": {
+      "title": "Send us a Message",
+      "description": "Fill out the form below and we'll get back to you as soon as possible.",
+      "success": {
+        "title": "Message Sent!",
+        "description": "Thank you for reaching out. We'll get back to you within 24-48 hours.",
+        "button": "Send Another Message"
+      },
+      "fields": {
+        "name": {
+          "label": "Name",
+          "placeholder": "Your name"
+        },
+        "email": {
+          "label": "Email",
+          "placeholder": "your@email.com"
+        },
+        "subject": {
+          "label": "Subject",
+          "placeholder": "Select a subject",
+          "options": {
+            "general": "General Inquiry",
+            "bug": "Bug Report",
+            "feature": "Feature Request",
+            "feedback": "Feedback",
+            "other": "Other"
+          }
+        },
+        "message": {
+          "label": "Message",
+          "placeholder": "Tell us more about your inquiry..."
+        }
+      },
+      "error": "Something went wrong. Please try again or contact us directly via email.",
+      "submit": {
+        "loading": "Sending...",
+        "default": "Send Message"
+      }
+    },
+    "faq": {
+      "title": "Looking for Quick Answers?",
+      "description": "Check out our FAQ page for answers to common questions about {brand}.",
+      "button": "View FAQ"
+    }
+  },
+  "errors": {
+    "fileTooLarge": "File is too large. Maximum size is {maxSize}MB.",
+    "fileTypeInvalid": "Invalid file type. Please upload a {acceptedTypes} file.",
+    "fileCorrupted": "The file appears to be corrupted or unreadable.",
+    "fileEmpty": "The file is empty.",
+    "fileNotPdf": "The file is not a valid PDF.",
+    "processingFailed": "Processing failed. Please try again.",
+    "processingCancelled": "Operation was cancelled.",
+    "networkError": "Network error. Please check your connection.",
+    "pdfEncrypted": "This PDF is password protected. Please decrypt it first.",
+    "pdfMalformed": "The PDF structure is invalid. Try the repair tool first.",
+    "processingTimeout": "Operation took too long. Try with a smaller file.",
+    "memoryExceeded": "Browser ran out of memory. Close other tabs and try again.",
+    "workerFailed": "Processing worker crashed. Please refresh and try again.",
+    "browserNotSupported": "Your browser does not support this feature.",
+    "invalidPageRange": "Invalid page range specified.",
+    "invalidOptions": "Invalid options provided.",
+    "unknown": "An unexpected error occurred. Please try again.",
+    "toolNotFound": "Tool Not Found"
+  },
+  "home": {
+    "hero": {
+      "title": "Professional PDF Tools",
+      "highlight": "Professional Tools",
+      "subtitle": "Free, private, and powerful PDF processing in your browser",
+      "cta": "Get Started"
+    },
+    "features": {
+      "privacy": {
+        "title": "100% Private",
+        "description": "All processing happens in your browser. Your files never leave your device."
+      },
+      "free": {
+        "title": "Completely Free",
+        "description": "No registration, no limits, no hidden costs."
+      },
+      "powerful": {
+        "title": "Powerful Tools",
+        "description": "67+ professional PDF tools for all your needs."
+      }
+    },
+    "popularTools": {
+      "badge": "Most Popular",
+      "title": "Popular PDF Tools",
+      "description": "Our most used tools to help you get your work done faster."
+    },
+    "categoriesSection": {
+      "title": "Explore All Tool Categories",
+      "description": "{count}+ professional PDF tools organized by category",
+      "toolsCount": "{count} tools"
+    },
+    "categoriesDescription": {
+      "editAnnotate": "Edit, annotate, and modify PDF content",
+      "convertToPdf": "Convert various formats to PDF",
+      "convertFromPdf": "Convert PDF to other formats",
+      "organizeManage": "Organize, merge, split, and manage PDF pages",
+      "optimizeRepair": "Compress, optimize, and repair PDF files",
+      "securePdf": "Encrypt, decrypt, and secure PDF files"
+    },
+    "stats": {
+      "pdfTools": "PDF Tools",
+      "freeToUse": "Free to Use",
+      "languages": "Languages",
+      "filesUploaded": "Files Uploaded"
+    },
+    "categories": {
+      "popular": "Popular Tools",
+      "editAnnotate": "Edit & Annotate",
+      "convertToPdf": "Convert to PDF",
+      "convertFromPdf": "Convert from PDF",
+      "organizeManage": "Organize & Manage",
+      "optimizeRepair": "Optimize & Repair",
+      "securePdf": "Secure PDF"
+    }
+  },
+  "tools": {
+    "search": {
+      "placeholder": "Search tools...",
+      "noResults": "No tools found for \"{query}\""
+    },
+    "relatedTools": "You May Also Like",
+    "about": "About This Tool",
+    "howToUse": "How to Use",
+    "useCases": "Use Cases",
+    "faq": "Frequently Asked Questions",
+    "comingSoon": "This tool is coming soon.",
+    "mergePdf": {
+      "uploadLabel": "Upload PDF Files",
+      "uploadDescription": "Drag and drop PDF files here, or click to browse. You can add multiple files.",
+      "filesTitle": "Files to Merge",
+      "reorderHint": "Drag and drop to reorder files. Files will be merged in the order shown.",
+      "optionsTitle": "Merge Options",
+      "preserveBookmarks": "Preserve bookmarks (create bookmark for each file)",
+      "mergeButton": "Merge PDFs",
+      "successMessage": "PDFs merged successfully! Click the download button to save your file."
+    },
+    "splitPdf": {
+      "uploadLabel": "Upload PDF File",
+      "uploadDescription": "Drag and drop a PDF file here, or click to browse.",
+      "splitModeTitle": "Split Method",
+      "modeRanges": "By Page Ranges",
+      "modeEveryPage": "Split Every Page",
+      "modeEveryN": "Split Every N Pages",
+      "rangeInputLabel": "Page Ranges",
+      "rangeInputHint": "Enter page numbers or ranges separated by commas. Or click pages below to select.",
+      "pagesPerSplitLabel": "Pages per file",
+      "pagesPerSplitHint": "Will create {count} files",
+      "pagePreviewTitle": "Select Pages",
+      "splitButton": "Split PDF",
+      "resultsTitle": "Split Results",
+      "successMessage": "PDF split successfully! Click the download buttons to save your files."
+    },
+    "deletePages": {
+      "uploadLabel": "Upload PDF File",
+      "uploadDescription": "Drag and drop a PDF file here, or click to browse.",
+      "selectTitle": "Select Pages to Delete",
+      "selectHint": "Click pages to select them for deletion, or enter page numbers/ranges above.",
+      "warning": "Warning",
+      "warningText": "Selected pages will be permanently removed from the PDF. At least one page must remain.",
+      "deleteButton": "Delete Pages",
+      "successMessage": "Pages deleted successfully! Click the download button to save your file."
+    },
+    "extractPages": {
+      "uploadLabel": "Upload PDF File",
+      "uploadDescription": "Drag and drop a PDF file here, or click to browse.",
+      "selectTitle": "Select Pages to Extract",
+      "selectHint": "Click pages to select them, or enter page numbers/ranges above.",
+      "extractButton": "Extract Pages",
+      "successMessage": "Pages extracted successfully! Click the download button to save your file."
+    },
+    "posterizePdf": {
+      "uploadLabel": "Upload PDF File",
+      "uploadDescription": "Drag and drop a PDF file here, or click to browse.",
+      "optionsTitle": "Posterize Options",
+      "rows": "Rows",
+      "cols": "Columns",
+      "pageSize": "Output Page Size",
+      "orientation": "Orientation",
+      "overlap": "Overlap",
+      "scalingMode": "Scaling Mode",
+      "fit": "Fit (preserve aspect ratio)",
+      "fill": "Fill (may crop)",
+      "pageRange": "Page Range (optional)",
+      "pageRangePlaceholder": "e.g., 1-5, 8, 10-15 (leave empty for all pages)",
+      "previewInfo": "Each page will be split into {rows}×{cols} = {total} tiles.",
+      "createButton": "Posterize PDF",
+      "successMessage": "PDF posterized successfully! Click the download button to save your file."
+    },
+    "pdfMultiTool": {
+      "uploadLabel": "Upload PDF File",
+      "uploadDescription": "Drag and drop a PDF file here, or click to browse.",
+      "organize": "Organize",
+      "delete": "Delete",
+      "rotate": "Rotate",
+      "duplicate": "Duplicate",
+      "addBlank": "Add Blank",
+      "organizeHint": "Drag and drop pages to reorder them.",
+      "deleteHint": "Click pages to mark them for deletion.",
+      "rotateHint": "Click rotation buttons on pages, or rotate all:",
+      "duplicateHint": "Click the duplicate button on pages to copy them.",
+      "reset": "Reset to Original",
+      "processButton": "Apply Changes",
+      "successMessage": "PDF processed successfully! Click the download button to save your file."
+    },
+    "viewMetadata": {
+      "uploadLabel": "Upload PDF File",
+      "uploadDescription": "Drag and drop a PDF file here to view its metadata.",
+      "documentProperties": "Document Properties",
+      "title": "Title",
+      "author": "Author",
+      "subject": "Subject",
+      "keywords": "Keywords",
+      "creator": "Creator Application",
+      "producer": "PDF Producer",
+      "dates": "Dates",
+      "creationDate": "Creation Date",
+      "modificationDate": "Modification Date",
+      "documentInfo": "Document Information",
+      "pageCount": "Page Count",
+      "fileSize": "File Size",
+      "pdfVersion": "PDF Version",
+      "isLinearized": "Linearized (Fast Web View)",
+      "customMetadata": "Additional Metadata",
+      "exportJson": "Export as JSON",
+      "successMessage": "Metadata extracted successfully! You can export it as JSON if needed."
+    },
+    "editMetadata": {
+      "uploadLabel": "Upload PDF File",
+      "uploadDescription": "Drag and drop a PDF file here to edit its metadata.",
+      "editTitle": "Edit Document Properties",
+      "title": "Title",
+      "titlePlaceholder": "Enter document title",
+      "author": "Author",
+      "authorPlaceholder": "Enter author name",
+      "subject": "Subject",
+      "subjectPlaceholder": "Enter document subject",
+      "keywords": "Keywords",
+      "keywordsPlaceholder": "Enter keywords separated by commas",
+      "creator": "Creator Application",
+      "creatorPlaceholder": "Enter creator application",
+      "producer": "PDF Producer",
+      "producerPlaceholder": "Enter PDF producer",
+      "resetButton": "Reset",
+      "saveButton": "Save Metadata",
+      "editAnother": "Edit Another PDF",
+      "modificationNote": "The modification date will be updated automatically when you save.",
+      "successMessage": "Metadata updated successfully! Click the download button to save your file."
+    },
+    "editPdf": {
+      "uploadLabel": "Upload PDF to Edit",
+      "uploadDescription": "Drag and drop a PDF file here, or click to browse.",
+      "instructions": "How to use",
+      "instructionsText": "Use the toolbar above the PDF to add text, draw, highlight, or add images. Click the download button (💾) in the toolbar to save your edited PDF.",
+      "saveButton": "Save PDF",
+      "saveDownload": "Save & Download",
+      "saveError": "Failed to save PDF. Please use the export button in the toolbar.",
+      "savingMessage": "Saving PDF with annotations...",
+      "successMessage": "PDF saved successfully! Click the download button to save your edited file.",
+      "redactWarningTitle": "Redaction Mode Active",
+      "redactWarningDescription": "Select areas to permanently remove content. Redacted content cannot be recovered after saving.",
+      "toolbar": {
+        "select": "Select",
+        "highlight": "Highlight",
+        "underline": "Underline",
+        "strikethrough": "Strikethrough",
+        "text": "Text",
+        "draw": "Draw",
+        "rectangle": "Rectangle",
+        "circle": "Circle",
+        "arrow": "Arrow",
+        "image": "Image",
+        "redact": "Redact"
+      },
+      "options": {
+        "highlightColor": "Highlight Color",
+        "textColor": "Text Color",
+        "fontSize": "Font Size",
+        "inkColor": "Ink Color",
+        "inkThickness": "Ink Thickness"
+      }
+    },
+    "imageToPdf": {
+      "uploadLabel": "Upload Images",
+      "uploadDescription": "Drag and drop images here, or click to browse. Supports JPG, PNG, WebP, BMP, TIFF, SVG, HEIC.",
+      "imagesTitle": "Images",
+      "reorderHint": "Drag and drop to reorder images. Images will appear in the PDF in the order shown.",
+      "convertButton": "Convert to PDF",
+      "optionsTitle": "PDF Options",
+      "pageSize": "Page Size",
+      "orientation": "Orientation",
+      "orientationAuto": "Auto (match image)",
+      "orientationPortrait": "Portrait",
+      "orientationLandscape": "Landscape",
+      "margin": "Margin",
+      "marginNone": "None",
+      "marginSmall": "Small (0.25\")",
+      "marginMedium": "Medium (0.5\")",
+      "marginLarge": "Large (1\")",
+      "centerImage": "Center images on page",
+      "scaleToFit": "Scale images to fit page",
+      "imageQuality": "Image Quality",
+      "fitMode": "Fit Mode",
+      "fitPage": "Fit to Page",
+      "fillPage": "Fill Page",
+      "originalSize": "Original Size",
+      "svgQuality": "SVG Export Quality",
+      "svgQualityLow": "Low (1x - smaller file)",
+      "svgQualityMedium": "Medium (2x - balanced)",
+      "svgQualityHigh": "High (3x - better quality)",
+      "svgQualityVeryHigh": "Very High (4x - best quality)",
+      "svgQualityHint": "Higher quality produces sharper images but larger file sizes.",
+      "successMessage": "Images converted to PDF successfully! Click the download button to save your file."
+    },
+    "compressPdf": {
+      "uploadLabel": "Upload PDF Files",
+      "uploadDescription": "Drag and drop a PDF file here, or click to browse.",
+      "batchUploadDescription": "Drag and drop PDF files here. You can compress up to 10 files at once.",
+      "filesTitle": "Files to Compress",
+      "optionsTitle": "Compression Options",
+      "qualityLabel": "Compression Quality",
+      "qualityLow": "Low",
+      "qualityLowDesc": "Maximum compression with object stream optimization",
+      "qualityMedium": "Medium",
+      "qualityMediumDesc": "Balanced compression with structure optimization",
+      "qualityHigh": "High",
+      "qualityHighDesc": "Moderate compression, preserves more structure",
+      "qualityMaximum": "Maximum",
+      "qualityMaximumDesc": "Minimal compression, preserves original quality",
+      "optimizeImages": "Optimize embedded images",
+      "removeMetadata": "Remove metadata (title, author, etc.)",
+      "compressButton": "Compress PDFs",
+      "successMessage": "PDF compressed successfully!",
+      "batchSuccessMessage": "Successfully compressed all PDF files!",
+      "downloadAllZip": "Download All as ZIP",
+      "originalSize": "Original:",
+      "compressedSize": "Compressed:",
+      "saved": "Saved:"
+    },
+    "signPdf": {
+      "uploadLabel": "Upload PDF File",
+      "uploadDescription": "Drag and drop a PDF file to sign.",
+      "instructionsTitle": "How to Sign",
+      "instruction1": "Click the Signature tool (pen icon) in the toolbar",
+      "instruction2": "Draw, type, or upload your signature",
+      "instruction3": "Click where you want to place the signature",
+      "instruction4": "Click \"Save Signed PDF\" below when done",
+      "flattenOption": "Flatten signature (recommended - makes signature permanent)",
+      "saveButton": "Save Signed PDF",
+      "successMessage": "PDF signed successfully!"
+    },
+    "cropPdf": {
+      "uploadLabel": "Upload PDF File",
+      "uploadDescription": "Drag and drop a PDF file to crop.",
+      "pages": "pages",
+      "applyToAll": "Apply to all pages",
+      "cropButton": "Crop PDF",
+      "successMessage": "PDF cropped successfully!",
+      "zoomIn": "Zoom In",
+      "zoomOut": "Zoom Out",
+      "resetZoom": "Reset Zoom",
+      "reset": "Reset",
+      "fullscreen": "Fullscreen",
+      "exitFullscreen": "Exit Fullscreen"
+    },
+    "organizePdf": {
+      "uploadLabel": "Upload PDF File",
+      "uploadDescription": "Drag and drop a PDF file to organize pages."
+    },
+    "repairPdf": {
+      "uploadLabel": "Upload PDF Files",
+      "uploadDescription": "Drag and drop PDF files to repair.",
+      "filesTitle": "Files to Repair",
+      "repairButton": "Repair PDFs",
+      "successMessage": "PDF repaired successfully!"
+    },
+    "dividePages": {
+      "uploadLabel": "Upload PDF File",
+      "uploadDescription": "Drag and drop a PDF file here, or click to browse.",
+      "optionsTitle": "Division Options",
+      "divisionType": "Division Type",
+      "vertical": "Vertical",
+      "horizontal": "Horizontal",
+      "grid2x2": "2×2 Grid",
+      "grid3x3": "3×3 Grid",
+      "previewInfo": "Each page will be divided based on the selected option.",
+      "divideButton": "Divide Pages",
+      "successMessage": "Pages divided successfully!"
+    },
+    "extractAttachments": {
+      "uploadLabel": "Upload PDF Files",
+      "uploadDescription": "Select PDF files to extract attachments from.",
+      "filesTitle": "Selected Files",
+      "extractButton": "Extract Attachments",
+      "extractedTitle": "Extracted Attachments",
+      "downloadAll": "Download All",
+      "successMessage": "Attachments extracted successfully!"
+    },
+    "encryptPdf": {
+      "uploadLabel": "Upload PDF File",
+      "uploadDescription": "Drag and drop a PDF file here, or click to browse.",
+      "passwordTitle": "Password Settings",
+      "privacyNotice": "🔒 Your passwords are processed locally and never sent to any server.",
+      "userPasswordLabel": "User Password (to open document)",
+      "userPasswordPlaceholder": "Enter password to open PDF",
+      "userPasswordHint": "Required to open and view the PDF.",
+      "ownerPasswordLabel": "Owner Password (to change permissions)",
+      "ownerPasswordPlaceholder": "Enter owner password",
+      "ownerPasswordHint": "Required to modify permissions or remove encryption.",
+      "permissionsTitle": "Document Permissions",
+      "permPrinting": "Allow Printing",
+      "permModifying": "Allow Modifying",
+      "permCopying": "Allow Copying",
+      "permAnnotating": "Allow Annotating",
+      "permFillingForms": "Allow Filling Forms",
+      "permAccessibility": "Allow Accessibility",
+      "permAssembly": "Allow Assembly",
+      "encryptButton": "Encrypt PDF",
+      "successMessage": "PDF encrypted successfully!",
+      "successHint": "Remember to save your passwords securely."
+    },
+    "decryptPdf": {
+      "uploadLabel": "Upload PDF File",
+      "uploadDescription": "Drag and drop an encrypted PDF file.",
+      "passwordTitle": "Enter Password",
+      "privacyNotice": "🔒 Your password is processed locally and never sent to any server.",
+      "passwordLabel": "PDF Password",
+      "passwordPlaceholder": "Enter the PDF password",
+      "passwordHint": "Leave empty if the PDF only has owner password restrictions.",
+      "decryptButton": "Decrypt PDF",
+      "successMessage": "PDF decrypted successfully!",
+      "successHint": "The PDF is now unlocked and can be opened without a password.",
+      "invalidPassword": "The password you entered is incorrect. Please check and try again."
+    },
+    "rotatePdf": {
+      "uploadLabel": "Upload PDF File",
+      "uploadDescription": "Drag and drop a PDF file to rotate pages.",
+      "optionsTitle": "Rotation Options",
+      "rotateTitle": "Rotate Pages",
+      "hint": "Click the rotation buttons on each page to rotate individually, or use the buttons above to rotate all pages.",
+      "rotateAll": "Rotate All Pages",
+      "rotateButton": "Rotate PDF",
+      "successMessage": "PDF pages rotated successfully! Click the download button to save your file."
+    },
+    "rotateCustom": {
+      "title": "Custom Rotation",
+      "uploadLabel": "Upload PDF File",
+      "uploadDescription": "Drag and drop a PDF file here, or click to browse.",
+      "setAllLabel": "Set all pages to:",
+      "applyToAll": "Apply to All",
+      "rotateButton": "Rotate PDF",
+      "rotatedCount": "({count} page(s) set)",
+      "successMessage": "Rotation completed successfully! Click the download button to save your file."
+    },
+    "addBlankPage": {
+      "uploadLabel": "Upload PDF File",
+      "uploadDescription": "Drag and drop a PDF file to add blank pages.",
+      "optionsTitle": "Add Blank Pages Options",
+      "positionLabel": "Insert Position",
+      "positionHint": "Enter 0 to insert at the beginning, or {total} to insert at the end.",
+      "countLabel": "Number of Blank Pages",
+      "position": "Position",
+      "pageSize": "Page Size",
+      "addButton": "Add Blank Pages",
+      "successMessage": "Blank pages added successfully! Click the download button to save your file."
+    },
+    "reversePages": {
+      "uploadLabel": "Upload PDF File",
+      "uploadDescription": "Drag and drop a PDF file to reverse page order.",
+      "infoTitle": "Reverse Page Order",
+      "infoDescription": "This will reverse the order of all pages in your PDF. The last page will become the first, and so on.",
+      "reverseButton": "Reverse Pages",
+      "successMessage": "Page order reversed successfully! Click the download button to save your file."
+    },
+    "nUpPdf": {
+      "uploadLabel": "Upload PDF File",
+      "uploadDescription": "Drag and drop a PDF file here, or click to browse.",
+      "optionsTitle": "N-Up Options",
+      "layout": "Layout",
+      "pagesPerSheet": "Pages per Sheet",
+      "pageSize": "Output Page Size",
+      "orientation": "Orientation",
+      "useMargins": "Add margins and gutters",
+      "addBorder": "Add border around pages",
+      "borderColor": "Border Color",
+      "previewInfo": "{pages} pages will be arranged into {sheets} sheet(s) with {perSheet} pages per sheet.",
+      "createButton": "Create N-Up PDF",
+      "successMessage": "N-Up PDF created successfully! Click the download button to save your file."
+    },
+    "alternateMerge": {
+      "uploadLabel": "Upload PDF Files",
+      "uploadDescription": "Upload two or more PDF files to interleave their pages alternately.",
+      "filesTitle": "Files to Interleave",
+      "reorderHint": "Drag and drop to reorder files. Pages will be interleaved in the order shown (1st page from file 1, 1st page from file 2, 2nd page from file 1, etc.).",
+      "optionsTitle": "Interleave Options",
+      "reverseSecond": "Reverse second document",
+      "reverseSecondHint": "Enable this for back-to-front scanned documents",
+      "howItWorks": "How it works:",
+      "howItWorksDescription": "Pages are interleaved alternately: Page 1 from File 1, Page 1 from File 2, Page 2 from File 1, Page 2 from File 2, and so on. If documents have different page counts, extra pages are appended at the end.",
+      "mergeButton": "Interleave PDFs",
+      "successMessage": "PDFs interleaved successfully! Click the download button to save your file."
+    },
+    "combineSinglePage": {
+      "uploadLabel": "Upload PDF File",
+      "uploadDescription": "Drag and drop a PDF file here, or click to browse.",
+      "optionsTitle": "Combine Options",
+      "orientation": "Orientation",
+      "vertical": "Vertical (Top to Bottom)",
+      "horizontal": "Horizontal (Left to Right)",
+      "spacing": "Page Spacing (points)",
+      "backgroundColor": "Background Color",
+      "addSeparator": "Add separator lines between pages",
+      "separatorThickness": "Separator Thickness (points)",
+      "separatorColor": "Separator Color",
+      "previewInfo": "{pages} pages will be combined into 1 continuous {orientation} page.",
+      "combineButton": "Combine Pages",
+      "successMessage": "Pages combined successfully! Click the download button to save your file."
+    },
+    "addAttachments": {
+      "pdfFileTitle": "1. Select PDF File",
+      "pdfUploadLabel": "Upload PDF File",
+      "pdfUploadDescription": "Select the PDF file to add attachments to.",
+      "attachmentsTitle": "2. Select Files to Attach",
+      "attachmentsUploadLabel": "Upload Attachments",
+      "attachmentsUploadDescription": "Select files to embed in the PDF. Any file type is supported.",
+      "optionsTitle": "Attachment Options",
+      "attachmentLevel": "Attachment Level",
+      "documentLevel": "Document Level",
+      "pageLevel": "Page Level",
+      "pageRange": "Page Range",
+      "pageRangeHint": "Specify which pages to attach files to.",
+      "addButton": "Add Attachments",
+      "successMessage": "Attachments added successfully! Click the download button to save your file."
+    },
+    "editAttachments": {
+      "uploadLabel": "Upload PDF File",
+      "uploadDescription": "Select a PDF file to view and manage its attachments.",
+      "loadingAttachments": "Loading attachments...",
+      "attachmentsTitle": "Attachments",
+      "selectAll": "Select All",
+      "deselectAll": "Deselect All",
+      "removeButton": "Remove Selected",
+      "noAttachments": "No attachments found in this PDF file.",
+      "selectedCount": "{count} attachment(s) selected for removal",
+      "selectAtLeastOne": "Please select at least one attachment to remove.",
+      "attachmentCount": "attachment(s)",
+      "saveButton": "Save Changes",
+      "successMessage": "Attachments removed successfully! Click the download button to save your file."
+    },
+    "comparePdfs": {
+      "file1Label": "First PDF (Original)",
+      "uploadFile1": "Upload First PDF",
+      "file2Label": "Second PDF (Modified)",
+      "uploadFile2": "Upload Second PDF",
+      "uploadDescription": "Drag and drop or click to browse",
+      "compareButton": "Compare PDFs",
+      "resultsTitle": "Comparison Results",
+      "newComparison": "New Comparison",
+      "viewMode": "View Mode:",
+      "sideBySide": "Side by Side",
+      "overlay": "Overlay",
+      "differences": "Differences",
+      "opacity": "Opacity:",
+      "diffView": "Difference View (Red areas show changes)",
+      "pageOverview": "Page Overview",
+      "fullscreen": "Fullscreen",
+      "exitFullscreen": "Exit Fullscreen",
+      "successMessage": "Comparison complete! Use the view modes and page navigation to explore differences."
+    },
+    "pdfToZip": {
+      "uploadLabel": "Upload PDF Files",
+      "uploadDescription": "Drag and drop PDF files to package.",
+      "filesTitle": "Files to Package",
+      "totalSize": "Total size",
+      "optionsTitle": "ZIP Options",
+      "compressionLevel": "Compression Level",
+      "noCompression": "No compression (fastest)",
+      "lowCompression": "Low compression (fast)",
+      "mediumCompression": "Medium compression (balanced)",
+      "highCompression": "High compression (smaller file)",
+      "createButton": "Create ZIP Archive",
+      "successMessage": "Successfully packaged PDF files into a ZIP archive. Click the download button to save your file."
+    },
+    "textToPdf": {
+      "uploadLabel": "Upload Text Files",
+      "uploadDescription": "Drag and drop text files here, or click to browse.",
+      "filesTitle": "Text Files",
+      "preview": "Preview",
+      "optionsTitle": "PDF Options",
+      "pageSize": "Page Size",
+      "fontFamily": "Font",
+      "fontSize": "Font Size",
+      "lineHeight": "Line Spacing",
+      "preserveLineBreaks": "Preserve line breaks",
+      "wrapLines": "Wrap long lines",
+      "convertButton": "Convert to PDF",
+      "successMessage": "Text converted to PDF successfully! Click the download button to save your file."
+    },
+    "txtToPdf": {
+      "uploadLabel": "Upload Text Files",
+      "uploadDescription": "Drag and drop text files here, or click to browse.",
+      "filesTitle": "Text Files",
+      "preview": "Preview",
+      "optionsTitle": "PDF Options",
+      "pageSize": "Page Size",
+      "fontFamily": "Font Family",
+      "fontSize": "Font Size",
+      "lineHeight": "Line Spacing",
+      "preserveLineBreaks": "Preserve line breaks",
+      "wrapLines": "Wrap long lines",
+      "convertButton": "Convert to PDF",
+      "successMessage": "Text converted to PDF successfully! Click the download button to save your file.",
+      "modeUpload": "Upload Files",
+      "modeText": "Enter Text",
+      "enterText": "Enter Text",
+      "textPlaceholder": "Type or paste your text here...",
+      "characters": "characters",
+      "noTextError": "Please enter some text to convert.",
+      "noFilesError": "Please add at least 1 text file.",
+      "custom": "Custom",
+      "width": "Width (pt)",
+      "height": "Height (pt)",
+      "orientation": "Orientation",
+      "portrait": "Portrait",
+      "landscape": "Landscape",
+      "textColor": "Text Color",
+      "single": "Single",
+      "double": "Double",
+      "selectLanguages": "Select Languages",
+      "selectLanguagesPlaceholder": "Select languages...",
+      "searchLanguages": "Search languages...",
+      "languageHint": "Select languages used in your text for proper font support"
+    },
+    "jsonToPdf": {
+      "uploadLabel": "Upload JSON File",
+      "uploadDescription": "Drag and drop a JSON file.",
+      "convertButton": "Convert to PDF",
+      "successMessage": "JSON converted to PDF successfully!"
+    },
+    "pdfToImage": {
+      "uploadLabel": "Upload PDF File",
+      "uploadDescription": "Drag and drop a PDF file to convert.",
+      "optionsTitle": "Conversion Options",
+      "format": "Image Format",
+      "quality": "Quality",
+      "dpi": "Resolution (DPI)",
+      "resolution": "Resolution",
+      "pageRange": "Page Range",
+      "pageRangePlaceholder": "e.g., 1-3, 5, 7",
+      "pageRangeHint": "Leave empty for all pages",
+      "convertButton": "Convert to Images",
+      "downloadZip": "Download All as ZIP",
+      "previewTitle": "Converted Images",
+      "successMessage": "PDF converted to images successfully!"
+    },
+    "pdfToGreyscale": {
+      "uploadLabel": "Upload PDF File",
+      "uploadDescription": "Drag and drop a PDF file to convert to greyscale.",
+      "optionsTitle": "Greyscale Options",
+      "method": "Conversion Method",
+      "methodLuminosity": "Luminosity (Recommended)",
+      "methodAverage": "Average",
+      "methodLightness": "Lightness",
+      "quality": "Quality",
+      "qualityLow": "Low (Faster)",
+      "qualityMedium": "Medium (Recommended)",
+      "qualityHigh": "High (Slower)",
+      "pageRange": "Page Range",
+      "pageRangePlaceholder": "e.g., 1-3, 5, 7",
+      "pageRangeHint": "Leave empty for all pages",
+      "convertButton": "Convert to Greyscale",
+      "successMessage": "PDF converted to greyscale successfully!"
+    },
+    "pdfToJson": {
+      "uploadLabel": "Upload PDF File",
+      "uploadDescription": "Drag and drop a PDF file here, or click to browse.",
+      "optionsTitle": "Extraction Options",
+      "includeText": "Include Text",
+      "includeMetadata": "Include Metadata",
+      "includePageInfo": "Include Page Info",
+      "includeOutline": "Include Outline",
+      "prettyPrint": "Pretty Print",
+      "pageRange": "Page Range",
+      "pageRangePlaceholder": "e.g., 1-3, 5, 7",
+      "pageRangeHint": "Leave empty for all pages",
+      "previewTitle": "JSON Preview",
+      "convertButton": "Extract to JSON",
+      "successMessage": "PDF extracted to JSON successfully! Click the download button to save your file."
+    },
+    "ocrPdf": {
+      "uploadLabel": "Upload PDF File",
+      "uploadDescription": "Drag and drop a scanned PDF file here, or click to browse.",
+      "optionsTitle": "OCR Options",
+      "languages": "Languages",
+      "languagesHint": "Select one or more languages for better accuracy",
+      "outputFormat": "Output Format",
+      "formatText": "Text File (.txt)",
+      "formatPdf": "Searchable PDF",
+      "quality": "Quality",
+      "qualityLow": "Low (Faster)",
+      "qualityMedium": "Medium (Recommended)",
+      "qualityHigh": "High (Slower)",
+      "pageRange": "Page Range",
+      "pageRangePlaceholder": "e.g., 1-3, 5, 7",
+      "pageRangeHint": "Leave empty for all pages",
+      "processButton": "Start OCR",
+      "previewTitle": "Extracted Text Preview",
+      "successMessage": "OCR completed successfully! Click the download button to save your file.",
+      "infoTitle": "About OCR",
+      "infoText": "OCR (Optical Character Recognition) extracts text from scanned documents and images. For best results, use high-quality scans and select the correct language(s)."
+    },
+    "linearizePdf": {
+      "uploadLabel": "Upload PDF Files",
+      "uploadDescription": "Drag and drop PDF files here, or click to browse. You can select multiple files.",
+      "selectedFiles": "Selected Files",
+      "optionsTitle": "Linearization Options",
+      "info": "Linearization optimizes PDFs for fast web viewing. The first page will display before the entire file is downloaded, improving user experience for web-hosted documents.",
+      "useObjectStreams": "Use object streams for better compression",
+      "useObjectStreamsDesc": "Recommended for smaller file sizes. Disable for maximum compatibility with older PDF readers.",
+      "linearizeButton": "Linearize PDF",
+      "successMessage": "PDF linearized successfully!",
+      "filesProcessed": "Files:",
+      "pages": "Pages:",
+      "originalSize": "Original:",
+      "optimizedSize": "Optimized:"
+    },
+    "pageDimensions": {
+      "uploadLabel": "Upload PDF File",
+      "uploadDescription": "Drag and drop a PDF file here, or click to browse.",
+      "displayOptions": "Display Options",
+      "unitLabel": "Measurement Unit",
+      "unitPoints": "Points",
+      "unitInches": "Inches",
+      "unitMm": "Millimeters",
+      "analyzeButton": "Analyze Dimensions",
+      "summary": "Summary",
+      "totalPages": "Total Pages",
+      "uniqueSizes": "Unique Sizes",
+      "uniformSize": "Uniform Size",
+      "yes": "Yes",
+      "no": "No",
+      "sizeDistribution": "Size Distribution",
+      "pageDetails": "Page Details",
+      "page": "Page",
+      "width": "Width",
+      "height": "Height",
+      "orientation": "Orientation",
+      "standardSize": "Standard Size",
+      "showingFirst50": "Showing first 50 pages. Download JSON for complete data.",
+      "successMessage": "Dimensions analyzed successfully!"
+    },
+    "removeRestrictions": {
+      "uploadLabel": "Upload PDF File",
+      "uploadDescription": "Drag and drop a restricted PDF file.",
+      "optionsTitle": "Options",
+      "ownerPasswordLabel": "Owner Password (optional)",
+      "ownerPasswordPlaceholder": "Enter owner password if known",
+      "ownerPasswordHint": "If the PDF has an owner password, enter it here for better results.",
+      "info": "This tool removes owner password restrictions that prevent printing, copying, and editing. It works on PDFs with permission restrictions but cannot remove user passwords required to open the document.",
+      "warning": "Only use this tool on PDFs you own or have permission to modify. Removing restrictions from copyrighted material without authorization may violate copyright laws.",
+      "removeButton": "Remove Restrictions",
+      "successMessage": "Restrictions removed successfully!",
+      "originalSize": "Original:",
+      "newSize": "New Size:",
+      "successHint": "The PDF can now be printed, copied, and edited without restrictions.",
+      "invalidPassword": "The password you entered is incorrect. Please check and try again."
+    },
+    "sanitizePdf": {
+      "uploadLabel": "Upload PDF File",
+      "uploadDescription": "Drag and drop a PDF file to sanitize.",
+      "optionsTitle": "Sanitization Options",
+      "info": "Sanitization removes potentially harmful content from PDFs, making them safer to open and share.",
+      "removeJavaScript": "Remove JavaScript",
+      "removeAttachments": "Remove Attachments",
+      "removeLinks": "Remove External Links",
+      "removeFormActions": "Remove Form Actions",
+      "removeMetadata": "Remove Metadata",
+      "removeAnnotations": "Remove Annotations",
+      "sanitizeButton": "Sanitize PDF",
+      "successMessage": "PDF sanitized successfully!",
+      "removedItems": "Removed:"
+    },
+    "flattenPdf": {
+      "uploadLabel": "Upload PDF File",
+      "uploadDescription": "Drag and drop a PDF file to flatten.",
+      "flattenButton": "Flatten PDF",
+      "successMessage": "PDF flattened successfully!"
+    },
+    "removeMetadata": {
+      "uploadLabel": "Upload PDF File",
+      "uploadDescription": "Drag and drop a PDF file here, or click to browse.",
+      "optionsTitle": "Select Metadata to Remove",
+      "selectAll": "Select All",
+      "deselectAll": "Deselect All",
+      "info": "Removing metadata helps protect your privacy by stripping identifying information from the PDF.",
+      "title": "Title",
+      "author": "Author",
+      "subject": "Subject",
+      "keywords": "Keywords",
+      "creator": "Creator",
+      "producer": "Producer",
+      "creationDate": "Creation Date",
+      "modificationDate": "Modification Date",
+      "removeButton": "Remove Metadata",
+      "successMessage": "Metadata removed successfully!",
+      "removedFields": "Removed:"
+    },
+    "changePermissions": {
+      "uploadLabel": "Upload PDF File",
+      "uploadDescription": "Drag and drop a PDF file here, or click to browse.",
+      "optionsTitle": "Document Permissions",
+      "passwordTitle": "Password Settings",
+      "privacyNotice": "🔒 Your passwords are processed locally and never sent to any server.",
+      "currentPasswordLabel": "Current Password (if PDF is encrypted)",
+      "currentPasswordPlaceholder": "Enter current password",
+      "currentPasswordHint": "Required if the PDF is already password-protected.",
+      "newUserPasswordLabel": "New User Password (to open document)",
+      "newUserPasswordPlaceholder": "Enter user password",
+      "newUserPasswordHint": "Users will need this password to open the PDF.",
+      "newOwnerPasswordLabel": "New Owner Password (to change permissions)",
+      "newOwnerPasswordPlaceholder": "Enter owner password",
+      "newOwnerPasswordHint": "Required to enforce permission restrictions.",
+      "allowAll": "Allow All",
+      "restrictAll": "Restrict All",
+      "info": "Note: Permission enforcement requires PDF encryption. Set an owner password below to enforce restrictions.",
+      "allowPrinting": "Allow Printing",
+      "allowPrintingDesc": "Users can print the document",
+      "allowHighQualityPrinting": "Allow High-Quality Printing",
+      "allowHighQualityPrintingDesc": "Users can print at high resolution",
+      "allowModifying": "Allow Modifying",
+      "allowModifyingDesc": "Users can edit the document",
+      "allowCopying": "Allow Copying",
+      "allowCopyingDesc": "Users can copy text and images",
+      "allowAnnotating": "Allow Annotating",
+      "allowAnnotatingDesc": "Users can add comments and annotations",
+      "allowFillingForms": "Allow Filling Forms",
+      "allowFillingFormsDesc": "Users can fill in form fields",
+      "allowAccessibility": "Allow Accessibility",
+      "allowAccessibilityDesc": "Screen readers can access content",
+      "allowAssembly": "Allow Assembly",
+      "allowAssemblyDesc": "Users can insert, delete, or rotate pages",
+      "applyButton": "Apply Permissions",
+      "successMessage": "Permissions updated successfully!",
+      "successHint": "For full permission enforcement, encrypt the PDF with an owner password.",
+      "invalidPassword": "The current password you entered is incorrect. Please check and try again.",
+      "passwordRequired": "This PDF is password-protected. Please enter the current password to proceed."
+    },
+    "fixPageSize": {
+      "uploadLabel": "Upload PDF File",
+      "uploadDescription": "Drag and drop a PDF file here, or click to browse.",
+      "optionsTitle": "Page Size Options",
+      "targetSize": "Target Page Size",
+      "custom": "Custom",
+      "width": "Width (points)",
+      "height": "Height (points)",
+      "scaleMode": "Content Scaling",
+      "scaleFit": "Fit",
+      "scaleFill": "Fill",
+      "scaleStretch": "Stretch",
+      "scaleCenter": "Center",
+      "scaleFitDesc": "Scale content to fit within page, maintaining aspect ratio",
+      "scaleFillDesc": "Scale content to fill page, may crop edges",
+      "scaleStretchDesc": "Stretch content to fill page exactly",
+      "scaleCenterDesc": "Center content without scaling",
+      "orientation": "Page Orientation",
+      "orientAuto": "Auto",
+      "orientPortrait": "Portrait",
+      "orientLandscape": "Landscape",
+      "maintainAspectRatio": "Maintain aspect ratio",
+      "applyButton": "Fix Page Sizes",
+      "successMessage": "Page sizes fixed successfully!"
+    },
+    "bookmark": {
+      "uploadLabel": "Upload PDF File",
+      "uploadDescription": "Drag and drop a PDF file to edit bookmarks.",
+      "pdfPreview": "PDF Preview",
+      "bookmarksTitle": "Bookmarks",
+      "addBookmark": "Add Bookmark",
+      "noBookmarks": "No bookmarks yet. Click 'Add Bookmark' to create one.",
+      "hint": "Click a bookmark to preview its page. Use +/✎/× to add child, edit, or delete.",
+      "saveButton": "Save Bookmarks",
+      "successMessage": "Bookmarks saved successfully!"
+    },
+    "pageNumbers": {
+      "uploadLabel": "Upload PDF File",
+      "uploadDescription": "Drag and drop a PDF file.",
+      "optionsTitle": "Page Number Options",
+      "positionTitle": "Position",
+      "formatTitle": "Format",
+      "styleTitle": "Style",
+      "style": "Style",
+      "startNumber": "Start Number",
+      "customFormat": "Custom Format",
+      "customFormatHint": "Use {page} and {total} as placeholders",
+      "prefix": "Prefix",
+      "suffix": "Suffix",
+      "fontSize": "Font Size",
+      "margin": "Margin",
+      "color": "Color",
+      "skipFirstPage": "Skip first page (cover page)",
+      "preview": "Preview",
+      "pageOf": "Page {current} of {total}",
+      "firstPageSkipped": "First page will be skipped",
+      "previewText": "Preview: \"{text}\"",
+      "addButton": "Add Page Numbers",
+      "successMessage": "Page numbers added successfully!",
+      "zoomIn": "Zoom In",
+      "zoomOut": "Zoom Out",
+      "zoomReset": "Reset Zoom"
+    },
+    "watermark": {
+      "uploadLabel": "Upload PDF File",
+      "uploadDescription": "Drag and drop a PDF file.",
+      "optionsTitle": "Watermark Options",
+      "textWatermark": "Text Watermark",
+      "imageWatermark": "Image Watermark",
+      "watermarkText": "Watermark Text",
+      "watermarkImage": "Watermark Image (PNG/JPG)",
+      "fontSize": "Font Size",
+      "color": "Color",
+      "opacity": "Opacity",
+      "angle": "Angle",
+      "enterText": "Please enter text for the watermark.",
+      "selectImage": "Please select an image file for the watermark.",
+      "unsupportedImage": "Unsupported image format. Please use PNG or JPG.",
+      "failed": "Failed to add watermark.",
+      "addButton": "Add Watermark",
+      "successMessage": "Watermark added successfully!"
+    },
+    "headerFooter": {
+      "uploadLabel": "Upload PDF File",
+      "uploadDescription": "Drag and drop a PDF file here.",
+      "headerTitle": "Header",
+      "footerTitle": "Footer",
+      "styleTitle": "Style",
+      "preview": "Preview",
+      "previewHint": "Enter header or footer text to see preview",
+      "addButton": "Add Header & Footer",
+      "successMessage": "Header & footer added successfully!"
+    },
+    "invertColors": {
+      "uploadLabel": "Upload PDF File",
+      "uploadDescription": "Drag and drop a PDF file.",
+      "invertButton": "Invert Colors",
+      "successMessage": "Colors inverted successfully!"
+    },
+    "backgroundColor": {
+      "uploadLabel": "Upload PDF File",
+      "uploadDescription": "Drag and drop a PDF file.",
+      "colorLabel": "Background Color",
+      "applyButton": "Apply Background",
+      "successMessage": "Background color applied successfully!"
+    },
+    "textColor": {
+      "uploadLabel": "Upload PDF File",
+      "uploadDescription": "Drag and drop a PDF file.",
+      "colorLabel": "Text Color",
+      "modeLabel": "Text Type",
+      "modeDark": "Dark text (light background)",
+      "modeLight": "Light text (dark background)",
+      "thresholdLabel": "Brightness Threshold",
+      "thresholdHint": "Adjust to control which pixels are affected",
+      "applyButton": "Apply Text Color",
+      "successMessage": "Text color applied successfully!"
+    },
+    "stamps": {
+      "uploadLabel": "Upload PDF File",
+      "uploadDescription": "Drag and drop a PDF file here.",
+      "instructionsTitle": "How to Add Stamps",
+      "instruction1": "Click the Stamp tool (image icon) in the toolbar above",
+      "instruction2": "Click \"Add image\" to upload your stamp image",
+      "instruction3": "Click on the PDF where you want to place the stamp",
+      "instruction4": "Drag to resize or reposition the stamp",
+      "instruction5": "Click \"Save Stamped PDF\" below when done",
+      "saveButton": "Save Stamped PDF",
+      "viewerNotReady": "Viewer not ready. Please wait for the PDF to load.",
+      "saveFailed": "Failed to save stamped PDF. Please try again.",
+      "successMessage": "Stamps added successfully!"
+    },
+    "removeAnnotations": {
+      "uploadLabel": "Upload PDF File",
+      "uploadDescription": "Drag and drop a PDF file.",
+      "optionsTitle": "Removal Options",
+      "removeButton": "Remove Annotations",
+      "successMessage": "Annotations removed successfully!"
+    },
+    "formFiller": {
+      "uploadLabel": "Upload PDF File",
+      "uploadDescription": "Drag and drop a PDF form.",
+      "saveButton": "Save Form",
+      "successMessage": "Form saved successfully!"
+    },
+    "formCreator": {
+      "uploadLabel": "Upload PDF File",
+      "uploadDescription": "Drag and drop a PDF file here.",
+      "toolbarTitle": "Toolbar",
+      "selectTool": "Select",
+      "textFieldTool": "Text Field",
+      "checkboxTool": "Checkbox",
+      "dropdownTool": "Dropdown",
+      "radioTool": "Radio",
+      "deleteTool": "Delete",
+      "pageNavigation": "Page {current} / {total}",
+      "selectHint": "Click a field to select, drag to move, use corner to resize",
+      "addFieldHint": "Click on the PDF to add a {type} field",
+      "fieldProperties": "Field Properties",
+      "fieldName": "Name",
+      "fieldType": "Type",
+      "fieldX": "X",
+      "fieldY": "Y",
+      "fieldWidth": "Width",
+      "fieldHeight": "Height",
+      "multiline": "Multiline",
+      "options": "Options (one per line)",
+      "deleteField": "Delete Field",
+      "noFieldSelected": "Select a field to edit its properties, or use the toolbar to add new fields.",
+      "allFields": "All Fields ({count})",
+      "noFieldsYet": "No fields added yet. Click on the PDF to add form fields.",
+      "page": "Page {number}",
+      "createButton": "Create Form",
+      "successMessage": "Form created successfully!"
+    },
+    "removeBlankPages": {
+      "uploadLabel": "Upload PDF File",
+      "uploadDescription": "Drag and drop a PDF file.",
+      "optionsTitle": "Detection Options",
+      "removeButton": "Remove Blank Pages",
+      "successMessage": "Blank pages removed successfully!"
+    },
+    "tableOfContents": {
+      "uploadLabel": "Upload PDF File",
+      "uploadDescription": "Drag and drop a PDF file.",
+      "optionsTitle": "TOC Options",
+      "generateButton": "Generate TOC",
+      "successMessage": "Table of contents generated successfully!",
+      "options": "TOC Options",
+      "tocTitle": "TOC Title",
+      "fontSize": "Font Size",
+      "fontFamily": "Font Family",
+      "addBookmark": "Add TOC entry to bookmarks",
+      "bookmarkRequired": "This tool generates a clickable table of contents from existing PDF bookmarks. Please ensure your PDF has bookmarks before using this tool. You can add bookmarks using the Edit Bookmarks tool.",
+      "generate": "Generate Table of Contents",
+      "success": "Table of contents generated successfully!"
+    },
+    "pdfToDocx": {
+      "uploadLabel": "Upload PDF File",
+      "uploadDescription": "Drag and drop a PDF file here, or click to browse.",
+      "convertButton": "Convert to DOCX",
+      "successMessage": "Your PDF has been successfully converted to DOCX! Click the download button to save your file."
+    }
+  }
+}
