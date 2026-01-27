@@ -98,7 +98,7 @@ import {
 } from '@/lib/seo/structured-data';
 import type { Metadata } from 'next';
 
-const SUPPORTED_LOCALES: Locale[] = ['en', 'ja', 'ko', 'es', 'fr', 'de', 'zh', 'pt'];
+const SUPPORTED_LOCALES: Locale[] = ['en', 'ja', 'ko', 'es', 'fr', 'de', 'zh', 'pt', 'ar'];
 
 interface ToolPageParams {
   params: Promise<{

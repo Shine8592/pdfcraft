@@ -17,6 +17,7 @@ import esMessages from '../../../messages/es.json';
 import frMessages from '../../../messages/fr.json';
 import deMessages from '../../../messages/de.json';
 import zhMessages from '../../../messages/zh.json';
+import zhTW_Messages from '../../../messages/zh-TW.json';
 import ptMessages from '../../../messages/pt.json';
 import arMessages from '../../../messages/ar.json';
 
@@ -29,6 +30,7 @@ const LOCALE_MESSAGES: Record<Locale, Record<string, unknown>> = {
   fr: frMessages,
   de: deMessages,
   zh: zhMessages,
+  'zh-TW': zhTW_Messages,
   pt: ptMessages,
   ar: arMessages,
 };

@@ -1,0 +1,1390 @@
+{
+    "metadata": {
+        "home": {
+            "title": "PDFCraft - أدوات PDF احترافية",
+            "description": "مجاني، خاص، ويعمل داخل المتصفح. دمج وتحرير ومعالجة ملفات PDF دون رفعها إلى أي خوادم."
+        },
+        "tools": {
+            "title": "جميع أدوات PDF",
+            "description": "تصفح أكثر من {count}+ أداة PDF احترافية. دمج، تقسيم، ضغط، تحويل، تحرير، وتأمين ملفات PDF مجانًا."
+        },
+        "about": {
+            "title": "من نحن",
+            "description": "تعرّف على PDFCraft — مجموعة أدوات PDF مجانية وخاصة وقوية. تتم جميع المعالجة داخل متصفحك."
+        },
+        "faq": {
+            "title": "الأسئلة الشائعة",
+            "description": "اعثر على إجابات للأسئلة الشائعة حول PDFCraft وتعرّف على كيفية استخدام أدوات PDF بفعالية."
+        },
+        "privacy": {
+            "title": "سياسة الخصوصية",
+            "description": "سياسة خصوصية PDFCraft. ملفاتك لا تغادر جهازك أبدًا، وجميع المعالجة تتم محليًا داخل المتصفح."
+        },
+        "contact": {
+            "title": "تواصل معنا",
+            "description": "تواصل مع فريق PDFCraft. يسعدنا سماع استفساراتك وملاحظاتك."
+        },
+        "keywords": {
+            "pdfTools": "أدوات PDF",
+            "mergePdf": "دمج PDF",
+            "splitPdf": "تقسيم PDF",
+            "compressPdf": "ضغط PDF",
+            "convertPdf": "تحويل PDF",
+            "freePdfTools": "أدوات PDF مجانية",
+            "onlinePdfEditor": "محرر PDF عبر الإنترنت"
+        }
+    },
+    "common": {
+        "brand": "PDFCraft",
+        "tagline": "أدوات PDF احترافية - مجانية وخاصة",
+        "navigation": {
+            "home": "الرئيسية",
+            "tools": "الأدوات",
+            "workflow": "سير العمل",
+            "about": "من نحن",
+            "faq": "الأسئلة الشائعة",
+            "privacy": "الخصوصية",
+            "contact": "تواصل معنا"
+        },
+        "buttons": {
+            "upload": "رفع الملفات",
+            "download": "تنزيل",
+            "process": "تنفيذ",
+            "cancel": "إلغاء",
+            "reset": "إعادة تعيين",
+            "clear": "مسح",
+            "selectLanguage": "اختيار اللغة",
+            "close": "إغلاق",
+            "save": "حفظ",
+            "delete": "حذف",
+            "edit": "تعديل",
+            "back": "رجوع",
+            "next": "التالي",
+            "previous": "السابق",
+            "submit": "إرسال",
+            "clearAll": "مسح الكل",
+            "remove": "إزالة",
+            "selectAll": "تحديد الكل",
+            "deselectAll": "إلغاء التحديد",
+            "apply": "تطبيق",
+            "insertAtBeginning": "إدراج في البداية",
+            "insertAtEnd": "إدراج في النهاية",
+            "rotateAllLeft": "تدوير الكل لليسار",
+            "rotateAllRight": "تدوير الكل لليمين",
+            "confirm": "تأكيد",
+            "add": "إضافة"
+        },
+        "status": {
+            "idle": "جاهز",
+            "uploading": "جارٍ الرفع...",
+            "processing": "جارٍ المعالجة...",
+            "complete": "اكتمل",
+            "error": "خطأ",
+            "loading": "جارٍ التحميل..."
+        },
+        "footer": {
+            "footer": "© {year} PDFCraft. جميع الحقوق محفوظة.",
+            "copyright": "© {year} PDFCraft. جميع الحقوق محفوظة.",
+            "privacyBadge": "خصوصية 100% - الملفات لا تغادر جهازك",
+            "madeWith": "صُنع باستخدام <Heart /> و <Nextjs />"
+        },
+        "recentFiles": {
+            "title": "الملفات الأخيرة",
+            "empty": "لا توجد ملفات حديثة",
+            "clearAll": "مسح الكل",
+            "processedWith": "تمت المعالجة باستخدام"
+        },
+        "savedProjects": {
+            "title": "المشاريع المحفوظة",
+            "empty": "لا توجد مشاريع محفوظة",
+            "clearAll": "مسح الكل",
+            "resume": "استئناف",
+            "delete": "حذف",
+            "inProgress": "قيد التنفيذ",
+            "paused": "متوقف مؤقتًا",
+            "completed": "مكتمل",
+            "progress": "التقدم",
+            "files": "ملفات"
+        },
+        "batchProcessing": {
+            "title": "المعالجة الجماعية",
+            "addFiles": "اسحب الملفات هنا أو انقر للإضافة",
+            "clearAll": "مسح الكل",
+            "startProcessing": "بدء المعالجة",
+            "cancelProcessing": "إلغاء",
+            "downloadAll": "تنزيل الكل",
+            "downloadZip": "تنزيل كملف ZIP",
+            "pending": "قيد الانتظار",
+            "processing": "جارٍ المعالجة...",
+            "completed": "مكتمل",
+            "error": "خطأ",
+            "progress": "التقدم الإجمالي",
+            "filesSelected": "ملفات محددة",
+            "noFiles": "لم تتم إضافة أي ملفات بعد. أضف ملفات لبدء المعالجة الجماعية."
+        },
+        "guidedTour": {
+            "startTour": "بدء الجولة",
+            "next": "التالي",
+            "prev": "رجوع",
+            "finish": "إنهاء",
+            "skip": "تخطي",
+            "stepOf": "من",
+            "welcomeTitle": "مرحبًا بك في PDFCraft!",
+            "welcomeMessage": "هل ترغب في جولة سريعة للتعرّف على كيفية استخدام أدوات PDF؟ لن تستغرق سوى دقيقة واحدة.",
+            "helpButton": "جولة المساعدة"
+        },
+        "search": {
+            "placeholder": "البحث عن الأدوات...",
+            "hint": "اضغط Enter للتحديد، ↑↓ للتنقل",
+            "noResults": "لم يتم العثور على أدوات"
+        },
+        "accessibility": {
+            "skipToContent": "الانتقال إلى المحتوى الرئيسي",
+            "skipToNavigation": "الانتقال إلى شريط التنقل",
+            "loading": "جارٍ التحميل، يرجى الانتظار",
+            "menuExpanded": "تم توسيع القائمة",
+            "menuCollapsed": "تم طي القائمة",
+            "newWindow": "يفتح في نافذة جديدة",
+            "externalLink": "رابط خارجي",
+            "required": "حقل مطلوب",
+            "optional": "اختياري",
+            "selected": "محدد",
+            "notSelected": "غير محدد",
+            "pageOf": "الصفحة {current} من {total}",
+            "sortAscending": "ترتيب تصاعدي",
+            "sortDescending": "ترتيب تنازلي",
+            "closeDialog": "إغلاق النافذة",
+            "expandSection": "توسيع القسم",
+            "collapseSection": "طي القسم"
+        },
+        "options": {
+            "auto": "تلقائي",
+            "portrait": "طولي",
+            "landscape": "عرضي"
+        }
+    },
+    "toolsPage": {
+        "title": "أدوات PDF احترافية",
+        "subtitle": "{count}+ أداة مجانية وآمنة وسهلة الاستخدام لجميع احتياجاتك في ملفات PDF.",
+        "filters": "عوامل التصفية",
+        "allTools": "جميع الأدوات",
+        "clearAll": "مسح الكل",
+        "clearFilters": "إزالة عوامل التصفية",
+        "showingAll": "عرض جميع الأدوات ({count})",
+        "showingFiltered": "عرض {filtered} من أصل {total}",
+        "forQuery": "لـ \"{query}\"",
+        "inCategory": "ضمن {category}",
+        "noToolsFound": "لم يتم العثور على أدوات"
+    },
+    "faqPage": {
+        "title": "الأسئلة الشائعة",
+        "subtitle": "اعثر على إجابات للأسئلة الشائعة حول {brand}",
+        "searchPlaceholder": "البحث في الأسئلة الشائعة...",
+        "noResults": "لا توجد أسئلة مطابقة لبحثك.",
+        "expandAll": "توسيع الكل",
+        "collapseAll": "طي الكل",
+        "categories": {
+            "all": "الكل",
+            "general": "عام",
+            "privacy": "الخصوصية والأمان",
+            "features": "الميزات",
+            "technical": "تقني",
+            "languages": "اللغات"
+        },
+        "sections": {
+            "general": {
+                "whatIs": {
+                    "question": "ما هو PDFCraft؟",
+                    "answer": "PDFCraft هو مجموعة أدوات PDF مجانية تركز على الخصوصية وتعمل بالكامل داخل متصفحك. توفر أكثر من {count}+ أداة احترافية لتحرير وتحويل ودمج وتقسيم وتأمين ملفات PDF دون رفعها إلى أي خادم."
+                },
+                "isFree": {
+                    "question": "هل PDFCraft مجاني فعلًا؟",
+                    "answer": "نعم، PDFCraft مجاني بالكامل للاستخدام. لا توجد تكاليف مخفية، ولا خطط مدفوعة، ولا حاجة للتسجيل."
+                },
+                "account": {
+                    "question": "هل أحتاج إلى إنشاء حساب؟",
+                    "answer": "لا، لست بحاجة إلى إنشاء حساب أو التسجيل. يمكنك استخدام جميع الأدوات مباشرة."
+                }
+            },
+            "privacy": {
+                "uploaded": {
+                    "question": "هل يتم رفع ملفاتي إلى خادم؟",
+                    "answer": "لا، لا يتم رفع ملفاتك إلى أي خادم. تتم جميع عمليات معالجة PDF محليًا داخل متصفحك باستخدام JavaScript و WebAssembly."
+                },
+                "safe": {
+                    "question": "هل استخدام PDFCraft آمن مع المستندات الحساسة؟",
+                    "answer": "نعم، تم تصميم PDFCraft مع التركيز على الخصوصية. بما أن المعالجة تتم محليًا، تبقى مستنداتك الحساسة على جهازك."
+                },
+                "storage": {
+                    "question": "ماذا يحدث لملفاتي بعد المعالجة؟",
+                    "answer": "يتم الاحتفاظ بالملفات مؤقتًا في ذاكرة المتصفح أثناء المعالجة، ويتم حذفها تلقائيًا عند إغلاق التبويب أو مغادرة الصفحة."
+                }
+            },
+            "features": {
+                "operations": {
+                    "question": "ما العمليات التي يمكنني تنفيذها على ملفات PDF؟",
+                    "answer": "يوفر PDFCraft أكثر من {count}+ أداة تشمل: الدمج، التقسيم، الضغط، التحويل، التحرير، إضافة العلامات المائية، التشفير، فك التشفير، OCR، وغيرها الكثير."
+                }
+            },
+            "technical": {
+                "browsers": {
+                    "question": "ما المتصفحات المدعومة؟",
+                    "answer": "يعمل PDFCraft على جميع المتصفحات الحديثة مثل Chrome و Firefox و Safari و Edge. نوصي باستخدام أحدث إصدار."
+                },
+                "sizeLimit": {
+                    "question": "هل هناك حد لحجم الملفات؟",
+                    "answer": "تدعم معظم الأدوات ملفات حتى {maxSize} ميجابايت، مع دعم أكبر لبعض الأدوات لضمان أداء سلس."
+                }
+            },
+            "languages": {
+                "supported": {
+                    "question": "ما اللغات المدعومة؟",
+                    "answer": "يتوفر PDFCraft بعدة لغات، بما في ذلك العربية مع دعم كامل للاتجاه من اليمين إلى اليسار (RTL)."
+                },
+                "change": {
+                    "question": "كيف يمكنني تغيير اللغة؟",
+                    "answer": "يمكنك تغيير اللغة باستخدام محدد اللغة في رأس الصفحة، وسيتم حفظ تفضيلك للزيارات القادمة."
+                }
+            }
+        },
+        "cta": {
+            "title": "هل ما زالت لديك أسئلة؟",
+            "description": "لم تجد الإجابة التي تبحث عنها؟ لا تتردد في التواصل معنا.",
+            "button": "تواصل معنا"
+        }
+    },
+    "aboutPage": {
+        "title": "من نحن - {brand}",
+        "description": "{brand} هي مجموعة أدوات PDF مجانية تركز على الخصوصية وتعمل بالكامل داخل متصفحك. مع أكثر من {count}+ أداة احترافية، يمكنك تحرير وتحويل ودمج وتقسيم وتأمين ملفات PDF دون رفعها إلى أي خادم.",
+        "mission": {
+            "title": "مهمتنا",
+            "p1": "نؤمن بأن الجميع يجب أن يتمكن من الوصول إلى أدوات PDF قوية دون المساس بالخصوصية أو دفع رسوم اشتراك مرتفعة. لهذا أنشأنا {brand} — مجموعة أدوات PDF شاملة تضع الخصوصية في المقام الأول.",
+            "p2": "على عكس خدمات PDF التقليدية التي تتطلب رفع ملفاتك إلى خوادم بعيدة، يقوم {brand} بمعالجة جميع الملفات محليًا داخل متصفحك. مستنداتك الحساسة لا تغادر جهازك أبدًا، مما يمنحك تحكمًا كاملًا في بياناتك.",
+            "p3": "سواء كنت طالبًا أو محترفًا أو مستخدمًا عاديًا، يوفر لك {brand} جميع الأدوات التي تحتاجها للعمل مع ملفات PDF بكفاءة وأمان."
+        },
+        "values": {
+            "title": "قيمنا",
+            "privacy": {
+                "title": "الخصوصية أولًا",
+                "description": "ملفاتك لا تغادر جهازك أبدًا. تتم جميع المعالجة محليًا داخل متصفحك، مما يضمن أعلى مستويات الخصوصية والأمان."
+            },
+            "fast": {
+                "title": "سريع وفعّال",
+                "description": "مدعوم بأحدث تقنيات الويب، يوفّر PDFCraft معالجة PDF سريعة للغاية دون الحاجة إلى الرفع أو التنزيل."
+            },
+            "accessible": {
+                "title": "متاح في كل مكان",
+                "description": "متوفر بعدة لغات ويعمل على أي جهاز يحتوي على متصفح حديث. لا حاجة للتثبيت."
+            },
+            "free": {
+                "title": "مجاني دائمًا",
+                "description": "PDFCraft مجاني بالكامل دون تكاليف مخفية، ودون الحاجة إلى التسجيل، وبدون أي قيود على الاستخدام."
+            },
+            "openSource": {
+                "title": "مفتوح المصدر",
+                "description": "مبني على الشفافية. الكود البرمجي مفتوح المصدر، مما يتيح للجميع التحقق من التزامنا بالخصوصية."
+            },
+            "community": {
+                "title": "مدفوع بالمجتمع",
+                "description": "تم تطويره بالاعتماد على ملاحظات المستخدمين من مختلف أنحاء العالم، ونعمل باستمرار على تحسينه وفق احتياجاتكم."
+            }
+        },
+        "technology": {
+            "title": "مبني باستخدام تقنيات حديثة",
+            "description": "تم تطوير {brand} باستخدام أحدث تقنيات الويب لضمان أفضل تجربة ممكنة:",
+            "list": {
+                "nextjs": "<strong1>Next.js</strong1> - لعرض الصفحات بسرعة وبشكل متوافق مع تحسين محركات البحث",
+                "wasm": "<strong1>WebAssembly</strong1> - لأداء قريب من التطبيقات الأصلية في معالجة PDF",
+                "workers": "<strong1>Web Workers</strong1> - لتنفيذ المعالجة في الخلفية دون التأثير على الأداء",
+                "pdflib": "<strong1>pdf-lib و PDF.js</strong1> - مكتبات قياسية في مجال معالجة ملفات PDF",
+                "indexeddb": "<strong1>IndexedDB</strong1> - لتخزين آمن ومحلي لأعمالك"
+            },
+            "summary": "تتيح لنا هذه المجموعة من التقنيات تقديم أدوات PDF بمستوى احترافي تعمل بالكامل داخل متصفحك، دون أي معالجة من جهة الخادم."
+        },
+        "cta": {
+            "title": "هل أنت مستعد للبدء؟",
+            "description": "استكشف أكثر من {count}+ أداة PDF واكتشف ما يمكن أن يقدمه لك {brand}.",
+            "button": "تصفح جميع الأدوات"
+        }
+    },
+    "contactPage": {
+        "hero": {
+            "title": "تواصل معنا",
+            "description": "هل لديك سؤال أو اقتراح أو وجدت خطأ؟ يسعدنا التواصل معك."
+        },
+        "methods": {
+            "email": {
+                "title": "البريد الإلكتروني",
+                "description": "أرسل لنا رسالة وسنقوم بالرد خلال 24-48 ساعة.",
+                "action": "contact@pdfcraft.app"
+            },
+            "github": {
+                "title": "GitHub",
+                "description": "الإبلاغ عن الأخطاء، طلب ميزات جديدة، أو المساهمة في المشروع.",
+                "action": "عرض على GitHub"
+            },
+            "twitter": {
+                "title": "تويتر",
+                "description": "تابعنا للحصول على آخر التحديثات والإعلانات.",
+                "action": "@pdfcraft"
+            }
+        },
+        "form": {
+            "title": "أرسل لنا رسالة",
+            "description": "املأ النموذج أدناه وسنقوم بالرد عليك في أقرب وقت ممكن.",
+            "success": {
+                "title": "تم إرسال الرسالة!",
+                "description": "شكرًا لتواصلك معنا. سنقوم بالرد خلال 24-48 ساعة.",
+                "button": "إرسال رسالة أخرى"
+            },
+            "fields": {
+                "name": {
+                    "label": "الاسم",
+                    "placeholder": "اسمك"
+                },
+                "email": {
+                    "label": "البريد الإلكتروني",
+                    "placeholder": "your@email.com"
+                },
+                "subject": {
+                    "label": "الموضوع",
+                    "placeholder": "اختر موضوعًا",
+                    "options": {
+                        "general": "استفسار عام",
+                        "bug": "الإبلاغ عن خطأ",
+                        "feature": "طلب ميزة",
+                        "feedback": "ملاحظات",
+                        "other": "أخرى"
+                    }
+                },
+                "message": {
+                    "label": "الرسالة",
+                    "placeholder": "أخبرنا المزيد عن استفسارك..."
+                }
+            },
+            "error": "حدث خطأ ما. يرجى المحاولة مرة أخرى أو التواصل معنا مباشرة عبر البريد الإلكتروني.",
+            "submit": {
+                "loading": "جارٍ الإرسال...",
+                "default": "إرسال الرسالة"
+            }
+        },
+        "faq": {
+            "title": "هل تبحث عن إجابات سريعة؟",
+            "description": "اطّلع على صفحة الأسئلة الشائعة للحصول على إجابات لأكثر الأسئلة شيوعًا حول {brand}.",
+            "button": "عرض الأسئلة الشائعة"
+        }
+    },
+    "errors": {
+        "fileTooLarge": "حجم الملف كبير جدًا. الحد الأقصى هو {maxSize} ميجابايت.",
+        "fileTypeInvalid": "نوع الملف غير صالح. يرجى رفع ملف من نوع {acceptedTypes}.",
+        "fileCorrupted": "يبدو أن الملف تالف أو غير قابل للقراءة.",
+        "fileEmpty": "الملف فارغ.",
+        "fileNotPdf": "الملف ليس PDF صالحًا.",
+        "processingFailed": "فشلت المعالجة. يرجى المحاولة مرة أخرى.",
+        "processingCancelled": "تم إلغاء العملية.",
+        "networkError": "خطأ في الشبكة. يرجى التحقق من اتصال الإنترنت.",
+        "pdfEncrypted": "ملف PDF محمي بكلمة مرور. يرجى فك التشفير أولًا.",
+        "pdfMalformed": "بنية ملف PDF غير صالحة. جرّب أداة الإصلاح أولًا.",
+        "processingTimeout": "استغرقت العملية وقتًا أطول من اللازم. جرّب ملفًا أصغر.",
+        "memoryExceeded": "نفدت ذاكرة المتصفح. أغلق علامات تبويب أخرى وحاول مرة أخرى.",
+        "workerFailed": "تعطلت مهمة المعالجة. يرجى تحديث الصفحة والمحاولة مرة أخرى.",
+        "browserNotSupported": "متصفحك لا يدعم هذه الميزة.",
+        "invalidPageRange": "نطاق الصفحات المحدد غير صالح.",
+        "invalidOptions": "تم تقديم خيارات غير صالحة.",
+        "unknown": "حدث خطأ غير متوقع. يرجى المحاولة مرة أخرى.",
+        "toolNotFound": "الأداة غير موجودة"
+    },
+    "home": {
+        "hero": {
+            "title": "أدوات PDF احترافية",
+            "highlight": "أدوات احترافية",
+            "subtitle": "معالجة ملفات PDF مجانية وخاصة وقوية داخل متصفحك",
+            "cta": "ابدأ الآن"
+        },
+        "features": {
+            "privacy": {
+                "title": "خصوصية 100%",
+                "description": "تتم جميع المعالجة داخل متصفحك. ملفاتك لا تغادر جهازك أبدًا."
+            },
+            "free": {
+                "title": "مجاني بالكامل",
+                "description": "دون تسجيل، دون قيود، ودون تكاليف مخفية."
+            },
+            "powerful": {
+                "title": "أدوات قوية",
+                "description": "أكثر من {count}+ أداة PDF احترافية لجميع احتياجاتك."
+            }
+        },
+        "popularTools": {
+            "badge": "الأكثر استخدامًا",
+            "title": "أدوات PDF الشائعة",
+            "description": "أدواتنا الأكثر استخدامًا لمساعدتك على إنجاز عملك بسرعة."
+        },
+        "categoriesSection": {
+            "title": "استكشف جميع فئات الأدوات",
+            "description": "أكثر من {count}+ أداة PDF احترافية مرتبة حسب الفئة",
+            "toolsCount": "{count} أداة"
+        },
+        "categoriesDescription": {
+            "editAnnotate": "تحرير وشرح وتعديل محتوى PDF",
+            "convertToPdf": "تحويل صيغ مختلفة إلى PDF",
+            "convertFromPdf": "تحويل ملفات PDF إلى صيغ أخرى",
+            "organizeManage": "تنظيم ودمج وتقسيم وإدارة صفحات PDF",
+            "optimizeRepair": "ضغط وتحسين وإصلاح ملفات PDF",
+            "securePdf": "تشفير وفك تشفير وتأمين ملفات PDF"
+        },
+        "stats": {
+            "pdfTools": "أدوات PDF",
+            "freeToUse": "مجاني للاستخدام",
+            "languages": "اللغات",
+            "filesUploaded": "الملفات المرفوعة"
+        },
+        "categories": {
+            "popular": "الأدوات الشائعة",
+            "editAnnotate": "تحرير وشرح",
+            "convertToPdf": "تحويل إلى PDF",
+            "convertFromPdf": "تحويل من PDF",
+            "organizeManage": "تنظيم وإدارة",
+            "optimizeRepair": "تحسين وإصلاح",
+            "securePdf": "تأمين PDF"
+        }
+    },
+    "workflow": {
+        "title": "منشئ سير عمل PDF",
+        "subtitle": "أنشئ مسارات معالجة PDF مخصصة عبر ربط الأدوات معًا",
+        "metaTitle": "منشئ سير عمل PDF - PDFCraft",
+        "metaDescription": "أنشئ مسارات معالجة PDF مخصصة عبر ربط الأدوات بصريًا. أنشئ واحفظ وأعد استخدام سير العمل.",
+        "toolbox": "صندوق الأدوات",
+        "dragToAdd": "اسحب الأدوات لإضافتها إلى سير العمل",
+        "searchTools": "البحث عن الأدوات...",
+        "toolsAvailable": "أدوات متاحة",
+        "templates": "القوالب",
+        "saved": "محفوظ",
+        "favorites": "المفضلة",
+        "allCategories": "الكل",
+        "common": "شائع",
+        "conversion": "تحويل",
+        "optimization": "تحسين",
+        "security": "الأمان",
+        "noSavedWorkflows": "لا توجد مسارات عمل محفوظة بعد",
+        "saveWorkflowHint": "أنشئ واحفظ أول مسار عمل لك",
+        "noFavorites": "لا توجد مسارات عمل مفضلة",
+        "favoriteHint": "ضع نجمة على مسارات العمل لإضافتها هنا",
+        "selectFiles": "تحديد الملفات",
+        "filesSelected": "ملفات محددة",
+        "execute": "تنفيذ",
+        "running": "جارٍ التنفيذ",
+        "complete": "مكتمل",
+        "error": "خطأ",
+        "issues": "مشكلات",
+        "stop": "إيقاف",
+        "nodes": "عُقد",
+        "import": "استيراد",
+        "clear": "مسح",
+        "saveWorkflow": "حفظ سير العمل",
+        "workflowName": "اسم سير العمل",
+        "enterName": "أدخل اسم سير العمل...",
+        "description": "الوصف",
+        "optional": "اختياري",
+        "enterDescription": "أدخل الوصف...",
+        "workflowComplete": "اكتمل سير العمل بنجاح!",
+        "downloadResults": "تنزيل النتائج",
+        "emptyTitle": "أنشئ سير عملك",
+        "emptyDescription": "اسحب الأدوات من الشريط الجانبي لبناء مسار معالجة PDF. اربط العُقد لتحديد ترتيب المعالجة.",
+        "clickHint": "انقر على عقدة لإعداد خياراتها",
+        "undo": "تراجع",
+        "redo": "إعادة",
+        "noSettings": "لا توجد إعدادات قابلة للتهيئة لهذه الأداة",
+        "reset": "إعادة تعيين",
+        "cancel": "إلغاء",
+        "apply": "تطبيق",
+        "preview": "معاينة",
+        "showPreview": "عرض المعاينة",
+        "noFilesForPreview": "حدّد ملفات لعرض المعاينة",
+        "generatingPreview": "جارٍ إنشاء المعاينة...",
+        "noPreviewAvailable": "لا تتوفر معاينة",
+        "selectedFiles": "الملفات المحددة",
+        "filesCount": "ملفات",
+        "viewEditFiles": "عرض / تعديل الملفات",
+        "moveUp": "تحريك للأعلى",
+        "moveDown": "تحريك للأسفل",
+        "removeFile": "إزالة",
+        "clearAll": "مسح الكل",
+        "previewNotAvailable": "المعاينة غير متاحة لهذا النوع من الملفات",
+        "confirm": "تأكيد",
+        "collapseSidebar": "طي الشريط الجانبي",
+        "expandSidebar": "توسيع الشريط الجانبي",
+        "library": "المكتبة",
+        "connections": "وصلات",
+        "workflowTemplates": {
+            "mergeCompress": {
+                "name": "دمج وضغط",
+                "description": "دمج عدة ملفات PDF ثم ضغط الناتج لتقليل الحجم"
+            },
+            "imagesToWatermarkedPdf": {
+                "name": "صور إلى PDF بعلامة مائية",
+                "description": "تحويل الصور إلى PDF مع إضافة علامة مائية مخصصة"
+            },
+            "pdfToImages": {
+                "name": "PDF إلى صور مضغوطة",
+                "description": "تحويل صفحات PDF إلى صور JPG"
+            },
+            "securePdf": {
+                "name": "إنشاء PDF آمن",
+                "description": "دمج ملفات PDF وإضافة علامة مائية وتشفيرها بكلمة مرور"
+            },
+            "documentPrep": {
+                "name": "تهيئة المستند",
+                "description": "دمج ملفات PDF وإضافة أرقام الصفحات ورأس/تذييل"
+            },
+            "optimizeForWeb": {
+                "name": "تحسين للويب",
+                "description": "ضغط وتهيئة PDF للعرض السريع على الويب"
+            },
+            "splitAndWatermark": {
+                "name": "تقسيم وإضافة علامة مائية",
+                "description": "تقسيم PDF إلى صفحات وإضافة علامة مائية لكل صفحة"
+            },
+            "officeToMergedPdf": {
+                "name": "ملفات Office إلى PDF واحد",
+                "description": "تحويل مستندات Word إلى PDF ودمجها"
+            },
+            "rotateAndNumber": {
+                "name": "تدوير وإضافة أرقام الصفحات",
+                "description": "تدوير صفحات PDF وإضافة أرقام الصفحات"
+            },
+            "printReady": {
+                "name": "مستند جاهز للطباعة",
+                "description": "تهيئة PDF للطباعة مع أرقام الصفحات وتسطيح المحتوى"
+            },
+            "grayscaleCompress": {
+                "name": "تدرج رمادي وضغط",
+                "description": "التحويل إلى تدرج رمادي ثم الضغط لتقليل الحجم"
+            },
+            "extractAndMerge": {
+                "name": "استخراج ودمج الصفحات",
+                "description": "استخراج صفحات محددة ودمجها في مستند جديد"
+            },
+            "confidentialDocument": {
+                "name": "مستند سري",
+                "description": "إضافة علامة مائية سرية وتشفير ملف PDF"
+            },
+            "pdfToEditableDoc": {
+                "name": "PDF إلى مستند قابل للتحرير",
+                "description": "تحويل PDF إلى مستند Word قابل للتحرير"
+            },
+            "fullOptimization": {
+                "name": "تحسين كامل للمستند",
+                "description": "ضغط وتسطيح وتهيئة للحصول على أفضل أداء"
+            },
+            "pdfToPresentation": {
+                "name": "PDF إلى عرض تقديمي",
+                "description": "تحويل PDF إلى عرض PowerPoint قابل للتحرير"
+            },
+            "unlockAndEdit": {
+                "name": "فك القفل والتحرير",
+                "description": "فك تشفير PDF المحمي للتحرير"
+            },
+            "ebookConvert": {
+                "name": "كتاب إلكتروني إلى PDF",
+                "description": "تحويل كتب EPUB الإلكترونية إلى صيغة PDF"
+            },
+            "batchWatermark": {
+                "name": "علامة مائية جماعية",
+                "description": "إضافة علامة مائية لعدة ملفات PDF دفعة واحدة"
+            },
+            "archivePrep": {
+                "name": "تهيئة الأرشفة",
+                "description": "إزالة البيانات الوصفية وتسطيح وضغط للتخزين طويل الأمد"
+            },
+            "reportAssembly": {
+                "name": "تجميع التقارير",
+                "description": "دمج المستندات وإضافة أرقام الصفحات والرأس/التذييل وفهرس المحتويات"
+            },
+            "invoiceProcessing": {
+                "name": "معالجة الفواتير",
+                "description": "استخراج الصفحات وإضافة علامة مائية وضغط للإرسال عبر البريد"
+            },
+            "photoAlbum": {
+                "name": "منشئ ألبوم الصور",
+                "description": "تحويل الصور إلى PDF مع أرقام الصفحات"
+            },
+            "cropAndResize": {
+                "name": "قص وتغيير حجم الصفحات",
+                "description": "قص صفحات PDF وضبط أبعاد الصفحة"
+            }
+        }
+    },
+    "tools": {
+        "search": {
+            "placeholder": "البحث عن الأدوات...",
+            "noResults": "لم يتم العثور على أدوات لـ \"{query}\""
+        },
+        "relatedTools": "قد يعجبك أيضًا",
+        "about": "حول هذه الأداة",
+        "howToUse": "طريقة الاستخدام",
+        "useCases": "حالات الاستخدام",
+        "faq": "الأسئلة الشائعة",
+        "comingSoon": "هذه الأداة قادمة قريبًا.",
+        "favorite": {
+            "add": "إضافة إلى المفضلة",
+            "remove": "إزالة من المفضلة",
+            "saved": "تم الحفظ",
+            "title": "الأدوات المفضلة",
+            "empty": "لا توجد أدوات مفضلة بعد",
+            "hint": "انقر على أيقونة النجمة في أي أداة لحفظها هنا للوصول السريع."
+        },
+        "quality": {
+            "title": "جودة الإخراج",
+            "low": "منخفضة",
+            "medium": "متوسطة",
+            "high": "عالية",
+            "hint": "الجودة الأعلى تنتج ملفات أكبر وتستغرق وقتًا أطول في التحويل."
+        },
+        "mergePdf": {
+            "uploadLabel": "رفع ملفات PDF",
+            "uploadDescription": "اسحب وأفلت ملفات PDF هنا، أو انقر للتصفح. يمكنك إضافة عدة ملفات.",
+            "filesTitle": "الملفات المراد دمجها",
+            "reorderHint": "اسحب وأفلت لإعادة ترتيب الملفات. سيتم دمج الملفات حسب الترتيب المعروض.",
+            "optionsTitle": "خيارات الدمج",
+            "preserveBookmarks": "الاحتفاظ بالإشارات المرجعية (إنشاء إشارة لكل ملف)",
+            "mergeButton": "دمج ملفات PDF",
+            "successMessage": "تم دمج ملفات PDF بنجاح! انقر على زر التنزيل لحفظ الملف."
+        },
+        "gridCombine": {
+            "uploadLabel": "رفع ملفات PDF",
+            "uploadDescription": "اسحب وأفلت عدة ملفات PDF هنا.",
+            "filesTitle": "الملفات المراد دمجها",
+            "reorderHint": "اسحب وأفلت لإعادة ترتيب الملفات.",
+            "optionsTitle": "خيارات التخطيط",
+            "gridLayout": "تخطيط شبكي",
+            "pageSize": "حجم الصفحة",
+            "orientation": "الاتجاه",
+            "spacing": "المسافات",
+            "useMargins": "إضافة هوامش",
+            "addBorder": "إضافة حدود",
+            "borderColor": "لون الحدود",
+            "combineButton": "دمج ملفات PDF",
+            "successMessage": "تم دمج ملفات PDF بنجاح! انقر على زر التنزيل لحفظ الملف.",
+            "layoutPreview": "معاينة التخطيط",
+            "columns": "أعمدة",
+            "rows": "صفوف",
+            "pageMode": "وضع الصفحة",
+            "firstPageOnly": "الصفحة الأولى فقط",
+            "allPages": "جميع الصفحات",
+            "firstPageOnlyHint": "استخدام الصفحة الأولى فقط من كل ملف PDF.",
+            "allPagesHint": "تضمين جميع الصفحات من كل ملف PDF في الشبكة.",
+            "fillMode": "وضع التعبئة",
+            "leaveEmpty": "ترك الخلايا فارغة",
+            "repeat": "التكرار من البداية",
+            "stretchLast": "تكرار الصفحة الأخيرة",
+            "fillModeHint": "طريقة ملء الخلايا الفارغة عندما يكون عدد الملفات أقل من عدد الخلايا.",
+            "cells": "خلايا",
+            "page": "صفحة",
+            "pages": "صفحات",
+            "previewInfoAllPages": "سيتم ترتيب {fileCount} ملف PDF بإجمالي {totalPages} صفحة ضمن تخطيط {layout} عبر {outputPages} صفحة إخراج.",
+            "previewInfoFirstPage": "سيتم ترتيب {fileCount} ملف PDF ضمن تخطيط {layout} عبر {outputPages} صفحة إخراج.",
+            "minFilesError": "يرجى إضافة ملفي PDF على الأقل للدمج."
+        },
+        "nUpPdf": {
+            "uploadLabel": "رفع ملف PDF",
+            "uploadDescription": "اسحب وأفلت ملف PDF هنا، أو انقر للتصفح.",
+            "optionsTitle": "خيارات N-Up",
+            "pagesPerSheet": "عدد الصفحات لكل ورقة",
+            "customLayout": "مخصص...",
+            "columns": "الأعمدة",
+            "rows": "الصفوف",
+            "pageSize": "حجم صفحة الإخراج",
+            "orientation": "الاتجاه",
+            "layoutDirection": "اتجاه التخطيط",
+            "layoutHorizontal": "أفقي (جنبًا إلى جنب)",
+            "layoutVertical": "عمودي (مكدس)",
+            "layoutHorizontalDesc": "يتم وضع الصفحات جنبًا إلى جنب (يمين–يسار)",
+            "layoutVerticalDesc": "يتم تكديس الصفحات من الأعلى إلى الأسفل",
+            "useMargins": "إضافة هوامش وفواصل",
+            "addBorder": "إضافة حدود حول الصفحات",
+            "borderColor": "لون الحدود",
+            "layoutPreview": "معاينة التخطيط",
+            "gridLayoutInfo": "شبكة: {cols} × {rows} ({perSheet} صفحات لكل ورقة)",
+            "previewInfo": "{pages} صفحات ← {sheets} ورقة إخراج",
+            "readingOrder": "ترتيب القراءة",
+            "topToBottom": "↓ من الأعلى إلى الأسفل",
+            "leftToRight": "→ من اليمين إلى اليسار ثم ↓ للأسفل",
+            "createButton": "إنشاء PDF بعدد {pages}-Up",
+            "createCustomButton": "إنشاء PDF بتخطيط {cols}×{rows}",
+            "gridLabel": "تخطيط الشبكة",
+            "outputPages": "أوراق الإخراج",
+            "pagesLabel": "صفحات",
+            "sheetsLabel": "أوراق",
+            "perSheetLabel": "لكل ورقة",
+            "successMessage": "تم إنشاء ملف N-Up PDF بنجاح! انقر على زر التنزيل لحفظ الملف."
+        },
+        "splitPdf": {
+            "uploadLabel": "رفع ملف PDF",
+            "uploadDescription": "اسحب وأفلت ملف PDF هنا، أو انقر للتصفح.",
+            "splitModeTitle": "طريقة التقسيم",
+            "splitModeLabel": "وضع التقسيم",
+            "modeRanges": "استخراج حسب نطاق الصفحات (افتراضي)",
+            "modeEvenOdd": "تقسيم حسب الصفحات الفردية/الزوجية",
+            "modeEveryPage": "تقسيم جميع الصفحات إلى ملفات منفصلة",
+            "modeVisual": "تحديد الصفحات بصريًا",
+            "modeBookmarks": "التقسيم حسب الإشارات المرجعية",
+            "modeNTimes": "التقسيم إلى عدة أجزاء",
+            "rangeInputLabel": "نطاق الصفحات",
+            "rangeInputHint": "أدخل أرقام الصفحات أو النطاقات مفصولة بفواصل. اتركه فارغًا لتصدير جميع الصفحات في ملف واحد.",
+            "evenOddLabel": "استخراج الصفحات",
+            "oddPagesOnly": "الصفحات الفردية فقط",
+            "evenPagesOnly": "الصفحات الزوجية فقط",
+            "bothSeparate": "كلاهما (ملفات منفصلة)",
+            "evenOddHint": "الصفحات الفردية: 1، 3، 5... الصفحات الزوجية: 2، 4، 6...",
+            "everyPageInfo": "سيتم استخراج كل صفحة في ملف PDF منفصل. سيتم إنشاء {count} ملف.",
+            "visualInfo": "انقر على صور الصفحات أدناه لتحديد الصفحات المراد استخراجها. سيتم دمج الصفحات المحددة في ملف واحد أو تقسيمها إلى ملفات منفصلة.",
+            "bookmarksNotice": "ملاحظة: يتطلب التقسيم حسب الإشارات المرجعية وجود إشارات في ملف PDF. في حال عدم العثور عليها، سيتم إرجاع الملف كاملًا كملف واحد.",
+            "splitCountLabel": "عدد الأجزاء",
+            "splitCountHint": "التقسيم إلى {count} أجزاء متساوية (حوالي {pages} صفحة لكل جزء)",
+            "pagePreviewTitle": "تحديد الصفحات",
+            "splitButton": "تقسيم ملف PDF",
+            "resultsTitle": "نتائج التقسيم",
+            "successMessage": "تم تقسيم ملف PDF بنجاح! انقر على أزرار التنزيل لحفظ الملفات.",
+            "modeVisualShort": "تحديد بصري",
+            "modeBookmarksShort": "إشارات مرجعية",
+            "modeNTimesShort": "تقسيم إلى أجزاء",
+            "downloadZip": "تنزيل الكل كملف ZIP"
+        },
+        "deletePages": {
+            "uploadLabel": "رفع ملف PDF",
+            "uploadDescription": "اسحب وأفلت ملف PDF هنا، أو انقر للتصفح.",
+            "selectTitle": "تحديد الصفحات المراد حذفها",
+            "selectHint": "انقر على الصفحات لتحديدها للحذف، أو أدخل أرقام الصفحات/النطاقات أعلاه.",
+            "warning": "تحذير",
+            "warningText": "سيتم حذف الصفحات المحددة نهائيًا من ملف PDF. يجب أن تبقى صفحة واحدة على الأقل.",
+            "deleteButton": "حذف الصفحات",
+            "pageRange": "نطاق الصفحات",
+            "pageRangePlaceholder": "مثال: 1، 3-5، 8",
+            "successMessage": "تم حذف الصفحات بنجاح! انقر على زر التنزيل لحفظ الملف."
+        },
+        "extractPages": {
+            "uploadLabel": "رفع ملف PDF",
+            "uploadDescription": "اسحب وأفلت ملف PDF هنا، أو انقر للتصفح.",
+            "selectTitle": "تحديد الصفحات المراد استخراجها",
+            "selectHint": "انقر على الصفحات لتحديدها، أو أدخل أرقام الصفحات/النطاقات أعلاه.",
+            "pageRange": "نطاق الصفحات",
+            "pageRangePlaceholder": "مثال: 1-5، 8، 10-12",
+            "extractButton": "استخراج الصفحات",
+            "successMessage": "تم استخراج الصفحات بنجاح! انقر على زر التنزيل لحفظ الملف."
+        },
+        "posterizePdf": {
+            "uploadLabel": "رفع ملف PDF",
+            "uploadDescription": "اسحب وأفلت ملف PDF هنا، أو انقر للتصفح.",
+            "optionsTitle": "خيارات التقسيم إلى ملصق",
+            "rows": "الصفوف",
+            "cols": "الأعمدة",
+            "pageSize": "حجم صفحة الإخراج",
+            "orientation": "الاتجاه",
+            "overlap": "التداخل",
+            "scalingMode": "وضع التحجيم",
+            "fit": "ملاءمة (مع الحفاظ على النسبة)",
+            "fill": "ملء (قد يؤدي إلى القص)",
+            "pageRange": "نطاق الصفحات (اختياري)",
+            "pageRangePlaceholder": "مثال: 1-5، 8، 10-15 (اتركه فارغًا لجميع الصفحات)",
+            "previewInfo": "سيتم تقسيم كل صفحة إلى {rows}x{cols} = {total} جزء.",
+            "createButton": "تحويل إلى ملصق PDF",
+            "successMessage": "تم تحويل ملف PDF إلى ملصق بنجاح! انقر على زر التنزيل لحفظ الملف."
+        },
+        "pdfMultiTool": {
+            "uploadLabel": "رفع ملفات PDF",
+            "uploadDescription": "اسحب وأفلت ملفات PDF هنا، أو انقر للتصفح. يمكنك رفع عدة ملفات.",
+            "addMoreFiles": "إضافة المزيد من ملفات PDF",
+            "organize": "تنظيم",
+            "delete": "حذف",
+            "rotate": "تدوير",
+            "duplicate": "تكرار",
+            "addBlank": "إضافة صفحة فارغة",
+            "organizeHint": "اسحب وأفلت الصفحات لإعادة ترتيبها.",
+            "deleteHint": "انقر على الصفحات لتحديدها للحذف.",
+            "rotateHint": "انقر على أزرار التدوير لكل صفحة، أو قم بتدوير جميع الصفحات:",
+            "duplicateHint": "انقر على زر التكرار في الصفحة لنسخها.",
+            "reset": "إعادة تعيين",
+            "undo": "تراجع",
+            "redo": "إعادة",
+            "selectAll": "تحديد الكل",
+            "deselectAll": "إلغاء التحديد",
+            "rotateLeft": "يسار",
+            "rotateRight": "يمين",
+            "exportPDF": "تصدير PDF",
+            "downloadSelected": "تنزيل المحدد",
+            "clearAll": "مسح الكل",
+            "addBlankPageTitle": "إضافة صفحات فارغة",
+            "numberOfPages": "عدد الصفحات",
+            "insertPosition": "موضع الإدراج",
+            "processButton": "تطبيق التغييرات",
+            "successMessage": "تمت معالجة ملف PDF بنجاح! انقر على زر التنزيل لحفظ الملف."
+        },
+        "viewMetadata": {
+            "uploadLabel": "رفع ملف PDF",
+            "uploadDescription": "اسحب وأفلت ملف PDF هنا لعرض بياناته الوصفية.",
+            "documentProperties": "خصائص المستند",
+            "title": "العنوان",
+            "author": "المؤلف",
+            "subject": "الموضوع",
+            "keywords": "الكلمات المفتاحية",
+            "creator": "تطبيق الإنشاء",
+            "producer": "منتِج PDF",
+            "dates": "التواريخ",
+            "creationDate": "تاريخ الإنشاء",
+            "modificationDate": "تاريخ التعديل",
+            "documentInfo": "معلومات المستند",
+            "pageCount": "عدد الصفحات",
+            "fileSize": "حجم الملف",
+            "pdfVersion": "إصدار PDF",
+            "isLinearized": "مهيأ للعرض السريع عبر الويب",
+            "customMetadata": "بيانات وصفية إضافية",
+            "exportJson": "تصدير كملف JSON",
+            "successMessage": "تم استخراج البيانات الوصفية بنجاح! يمكنك تصديرها كملف JSON عند الحاجة."
+        },
+        "editMetadata": {
+            "uploadLabel": "رفع ملف PDF",
+            "uploadDescription": "اسحب وأفلت ملف PDF هنا لتعديل بياناته الوصفية.",
+            "editTitle": "تعديل خصائص المستند",
+            "title": "العنوان",
+            "titlePlaceholder": "أدخل عنوان المستند",
+            "author": "المؤلف",
+            "authorPlaceholder": "أدخل اسم المؤلف",
+            "subject": "الموضوع",
+            "subjectPlaceholder": "أدخل موضوع المستند",
+            "keywords": "الكلمات المفتاحية",
+            "keywordsPlaceholder": "أدخل الكلمات المفتاحية مفصولة بفواصل",
+            "creator": "تطبيق الإنشاء",
+            "creatorPlaceholder": "أدخل اسم التطبيق",
+            "producer": "منتِج PDF",
+            "producerPlaceholder": "أدخل اسم المنتج",
+            "resetButton": "إعادة تعيين",
+            "saveButton": "حفظ البيانات الوصفية",
+            "editAnother": "تعديل ملف PDF آخر",
+            "modificationNote": "سيتم تحديث تاريخ التعديل تلقائيًا عند الحفظ.",
+            "successMessage": "تم تحديث البيانات الوصفية بنجاح! انقر على زر التنزيل لحفظ الملف."
+        },
+        "organizePdf": {
+            "uploadLabel": "رفع ملف PDF",
+            "uploadDescription": "اسحب وأفلت ملف PDF هنا لتنظيم الصفحات.",
+            "reorderTitle": "اسحب لإعادة ترتيب الصفحات",
+            "reverseOrder": "عكس الترتيب",
+            "resetOrder": "إعادة تعيين الترتيب",
+            "reorderHint": "اسحب وأفلت الصفحات لإعادة ترتيبها. استخدم الأسهم لتحريك الصفحات للأعلى أو الأسفل.",
+            "orderChanged": "تم تغيير ترتيب الصفحات. انقر على \"تطبيق التغييرات\" للحفظ.",
+            "applyButton": "تطبيق التغييرات",
+            "successMessage": "تم تنظيم صفحات PDF بنجاح! انقر على زر التنزيل لحفظ الملف.",
+            "duplicatePage": "تكرار",
+            "deletePage": "حذف",
+            "cannotDeleteLast": "لا يمكن حذف الصفحة الأخيرة"
+        },
+        "editPdf": {
+            "uploadLabel": "رفع ملف PDF للتحرير",
+            "uploadDescription": "اسحب وأفلت ملف PDF هنا، أو انقر للتصفح.",
+            "instructions": "طريقة الاستخدام",
+            "instructionsText": "استخدم شريط الأدوات أعلى ملف PDF لإضافة نص أو رسم أو تمييز أو إضافة صور. انقر على زر التنزيل (💾) في الشريط لحفظ ملف PDF المعدل.",
+            "saveButton": "حفظ ملف PDF",
+            "saveDownload": "حفظ وتنزيل",
+            "saveError": "فشل حفظ ملف PDF. يرجى استخدام زر التصدير في شريط الأدوات.",
+            "savingMessage": "جارٍ حفظ ملف PDF مع التعليقات...",
+            "successMessage": "تم حفظ ملف PDF بنجاح! انقر على زر التنزيل لحفظ الملف المعدل.",
+            "redactWarningTitle": "وضع الإخفاء مفعل",
+            "redactWarningDescription": "حدد المناطق لإزالة المحتوى نهائيًا. لا يمكن استعادة المحتوى المخفي بعد الحفظ.",
+            "toolbar": {
+                "select": "تحديد",
+                "highlight": "تمييز",
+                "underline": "تسطير",
+                "strikethrough": "يتوسطه خط",
+                "text": "نص",
+                "draw": "رسم",
+                "rectangle": "مستطيل",
+                "circle": "دائرة",
+                "arrow": "سهم",
+                "image": "صورة",
+                "redact": "إخفاء"
+            },
+            "options": {
+                "highlightColor": "لون التمييز",
+                "textColor": "لون النص",
+                "fontSize": "حجم الخط",
+                "inkColor": "لون القلم",
+                "inkThickness": "سُمك القلم"
+            }
+        },
+        "imageToPdf": {
+            "uploadLabel": "رفع الصور",
+            "uploadDescription": "اسحب وأفلت الصور هنا، أو انقر للتصفح. يدعم JPG و PNG و WebP و BMP و TIFF و SVG و HEIC.",
+            "imagesTitle": "الصور",
+            "reorderHint": "اسحب وأفلت لإعادة ترتيب الصور. ستظهر الصور في ملف PDF حسب الترتيب المعروض.",
+            "convertButton": "تحويل إلى PDF",
+            "optionsTitle": "خيارات PDF",
+            "pageSize": "حجم الصفحة",
+            "fitToImage": "ملاءمة حسب الصورة",
+            "orientation": "الاتجاه",
+            "orientationAuto": "تلقائي (مطابقة للصورة)",
+            "orientationPortrait": "طولي",
+            "orientationLandscape": "عرضي",
+            "margin": "الهامش",
+            "marginNone": "بدون",
+            "marginSmall": "صغير (0.25\")",
+            "marginMedium": "متوسط (0.5\")",
+            "marginLarge": "كبير (1\")",
+            "centerImage": "توسيط الصور في الصفحة",
+            "scaleToFit": "تحجيم الصور لتناسب الصفحة",
+            "imageQuality": "جودة الصورة",
+            "fitMode": "وضع الملاءمة",
+            "fitPage": "ملاءمة للصفحة",
+            "fillPage": "ملء الصفحة",
+            "originalSize": "الحجم الأصلي",
+            "svgQuality": "جودة تصدير SVG",
+            "svgQualityLow": "منخفضة (1x – ملف أصغر)",
+            "svgQualityMedium": "متوسطة (2x – توازن)",
+            "svgQualityHigh": "عالية (3x – جودة أفضل)",
+            "svgQualityVeryHigh": "عالية جدًا (4x – أفضل جودة)",
+            "svgQualityHint": "الجودة الأعلى تعطي صورًا أوضح لكنها تنتج ملفات أكبر.",
+            "batchMode": "تقسيم إلى عدة ملفات PDF",
+            "imagesPerPdf": "عدد الصور لكل PDF",
+            "batchModeHint": "سيتم إنشاء {pdfCount} ملف PDF وتغليفها في أرشيف ZIP.",
+            "batchSuccessMessage": "تم إنشاء {pdfCount} ملف PDF بنجاح من {imageCount} صورة! انقر على زر التنزيل لحفظ ملف ZIP.",
+            "successMessage": "تم تحويل الصور إلى PDF بنجاح! انقر على زر التنزيل لحفظ الملف."
+        },
+        "compressPdf": {
+            "uploadLabel": "رفع ملفات PDF",
+            "uploadDescription": "اسحب وأفلت ملف PDF هنا، أو انقر للتصفح.",
+            "batchUploadDescription": "اسحب وأفلت ملفات PDF هنا. يمكنك ضغط ما يصل إلى 10 ملفات دفعة واحدة.",
+            "filesTitle": "الملفات المراد ضغطها",
+            "optionsTitle": "خيارات الضغط",
+            "algorithmLabel": "خوارزمية الضغط",
+            "algorithmStandard": "قياسي",
+            "algorithmCondense": "تكثيف",
+            "algorithmPhoton": "فوتون",
+            "algorithmStandardDesc": "ضغط عام باستخدام تدفقات الكائنات",
+            "algorithmCondenseDesc": "تحسين البنية مع الحفاظ على التفاعلية",
+            "algorithmPhotonDesc": "تحويل الصفحات إلى صور — مناسب لملفات PDF الغنية بالصور",
+            "photonWarning": "ملاحظة: يقوم وضع فوتون بتحويل الصفحات إلى صور، مما قد يقلل جودة النص ويفقد التفاعلية (الروابط، النماذج).",
+            "photonDpiLabel": "دقة الإخراج (DPI)",
+            "photonDpiDesc": "دقة أعلى = جودة أفضل وحجم ملف أكبر",
+            "qualityLabel": "جودة الضغط",
+            "qualityLow": "منخفضة",
+            "qualityLowDesc": "أقصى ضغط مع تحسين تدفقات الكائنات",
+            "qualityMedium": "متوسطة",
+            "qualityMediumDesc": "توازن بين الضغط وتحسين البنية",
+            "qualityHigh": "عالية",
+            "qualityHighDesc": "ضغط معتدل مع الحفاظ على البنية",
+            "qualityMaximum": "قصوى",
+            "qualityMaximumDesc": "أقل ضغط مع الحفاظ على الجودة الأصلية",
+            "optimizeImages": "تحسين الصور المضمنة",
+            "removeMetadata": "إزالة البيانات الوصفية (العنوان، المؤلف، إلخ)",
+            "compressButton": "ضغط ملفات PDF",
+            "successMessage": "تم ضغط ملف PDF بنجاح!",
+            "batchSuccessMessage": "تم ضغط جميع ملفات PDF بنجاح!",
+            "downloadAllZip": "تنزيل الكل كملف ZIP",
+            "originalSize": "الحجم الأصلي:",
+            "compressedSize": "الحجم بعد الضغط:",
+            "saved": "تم التوفير:"
+        },
+        "textToPdf": {
+            "uploadLabel": "رفع ملفات نصية",
+            "uploadDescription": "اسحب وأفلت الملفات النصية هنا، أو انقر للتصفح.",
+            "filesTitle": "الملفات النصية",
+            "preview": "معاينة",
+            "optionsTitle": "خيارات PDF",
+            "pageSize": "حجم الصفحة",
+            "fontFamily": "الخط",
+            "fontSize": "حجم الخط",
+            "lineHeight": "تباعد الأسطر",
+            "preserveLineBreaks": "الاحتفاظ بفواصل الأسطر",
+            "wrapLines": "لف الأسطر الطويلة",
+            "convertButton": "تحويل إلى PDF",
+            "successMessage": "تم تحويل النص إلى PDF بنجاح! انقر على زر التنزيل لحفظ الملف."
+        },
+        "txtToPdf": {
+            "uploadLabel": "رفع ملفات نصية",
+            "uploadDescription": "اسحب وأفلت الملفات النصية هنا، أو انقر للتصفح.",
+            "filesTitle": "الملفات النصية",
+            "preview": "معاينة",
+            "optionsTitle": "خيارات PDF",
+            "pageSize": "حجم الصفحة",
+            "fontFamily": "نوع الخط",
+            "fontSize": "حجم الخط",
+            "lineHeight": "تباعد الأسطر",
+            "preserveLineBreaks": "الاحتفاظ بفواصل الأسطر",
+            "wrapLines": "لف الأسطر الطويلة",
+            "convertButton": "تحويل إلى PDF",
+            "successMessage": "تم تحويل النص إلى PDF بنجاح! انقر على زر التنزيل لحفظ الملف.",
+            "modeUpload": "رفع الملفات",
+            "modeText": "إدخال نص",
+            "enterText": "إدخال نص",
+            "textPlaceholder": "اكتب أو الصق النص هنا...",
+            "characters": "أحرف",
+            "noTextError": "يرجى إدخال نص للتحويل.",
+            "noFilesError": "يرجى إضافة ملف نصي واحد على الأقل.",
+            "custom": "مخصص",
+            "width": "العرض (نقطة)",
+            "height": "الارتفاع (نقطة)",
+            "orientation": "الاتجاه",
+            "portrait": "طولي",
+            "landscape": "عرضي",
+            "textColor": "لون النص",
+            "single": "مفرد",
+            "double": "مزدوج",
+            "selectLanguages": "تحديد اللغات",
+            "selectLanguagesPlaceholder": "اختر اللغات...",
+            "searchLanguages": "البحث عن اللغات...",
+            "languageHint": "حدّد اللغات المستخدمة في النص لضمان دعم الخطوط بشكل صحيح"
+        },
+        "jsonToPdf": {
+            "uploadLabel": "رفع ملف JSON",
+            "uploadDescription": "اسحب وأفلت ملف JSON هنا.",
+            "convertButton": "تحويل إلى PDF",
+            "successMessage": "تم تحويل ملف JSON إلى PDF بنجاح!"
+        },
+        "pdfToImage": {
+            "uploadLabel": "رفع ملف PDF",
+            "uploadDescription": "اسحب وأفلت ملف PDF هنا للتحويل.",
+            "optionsTitle": "خيارات التحويل",
+            "format": "صيغة الصورة",
+            "quality": "الجودة",
+            "dpi": "الدقة (DPI)",
+            "resolution": "الدقة",
+            "pageRange": "نطاق الصفحات",
+            "pageRangePlaceholder": "مثال: 1-3، 5، 7",
+            "pageRangeHint": "اتركه فارغًا لجميع الصفحات",
+            "layoutTitle": "تخطيط الصفحة",
+            "customLayout": "مخصص",
+            "columns": "الأعمدة",
+            "rows": "الصفوف",
+            "skipFirstPage": "بدون الصفحة الأولى (الغلاف)",
+            "skipFirstPageHint": "سيتم تحويل الصفحة الأولى (الغلاف) كصورة منفصلة",
+            "layoutPreview": "معاينة التخطيط",
+            "pagesPerImage": "عدد الصفحات لكل صورة",
+            "layoutHint": "دمج عدة صفحات PDF في صورة واحدة باستخدام التخطيط الشبكي المحدد.",
+            "convertButton": "تحويل إلى صور",
+            "downloadZip": "تنزيل الكل كملف ZIP",
+            "previewTitle": "الصور المحوّلة",
+            "successMessage": "تم تحويل ملف PDF إلى صور بنجاح!"
+        },
+        "pdfToSvg": {
+            "uploadLabel": "رفع ملف PDF",
+            "uploadDescription": "اسحب وأفلت ملف PDF هنا للتحويل إلى SVG.",
+            "optionsTitle": "خيارات التحويل",
+            "resolution": "الدقة",
+            "resolutionHint": "الدقة الأعلى تنتج ملفات SVG أكبر وأكثر تفصيلًا.",
+            "pageRange": "نطاق الصفحات",
+            "pageRangePlaceholder": "مثال: 1-3، 5، 7",
+            "pageRangeHint": "اتركه فارغًا لجميع الصفحات",
+            "convertButton": "تحويل إلى SVG",
+            "downloadZip": "تنزيل الكل كملف ZIP",
+            "previewTitle": "ملفات SVG المحوّلة",
+            "previewPage": "صفحة",
+            "successMessage": "تم تحويل ملف PDF إلى SVG بنجاح! انقر على الصور المصغرة للمعاينة أو التنزيل."
+        },
+        "pdfToJson": {
+            "uploadLabel": "رفع ملف PDF",
+            "uploadDescription": "اسحب وأفلت ملف PDF هنا، أو انقر للتصفح.",
+            "optionsTitle": "خيارات الاستخراج",
+            "includeText": "تضمين النص",
+            "includeMetadata": "تضمين البيانات الوصفية",
+            "includePageInfo": "تضمين معلومات الصفحات",
+            "includeOutline": "تضمين الفهرس",
+            "prettyPrint": "تنسيق منسق",
+            "pageRange": "نطاق الصفحات",
+            "pageRangePlaceholder": "مثال: 1-3، 5، 7",
+            "pageRangeHint": "اتركه فارغًا لجميع الصفحات",
+            "previewTitle": "معاينة JSON",
+            "convertButton": "استخراج إلى JSON",
+            "successMessage": "تم استخراج ملف PDF إلى JSON بنجاح! انقر على زر التنزيل لحفظ الملف."
+        },
+        "ocrPdf": {
+            "uploadLabel": "رفع ملف PDF ممسوح ضوئيًا",
+            "uploadDescription": "اسحب وأفلت ملف PDF ممسوح ضوئيًا هنا، أو انقر للتصفح.",
+            "optionsTitle": "خيارات OCR",
+            "languages": "اللغات",
+            "languagesHint": "حدد لغة واحدة أو أكثر لتحسين الدقة",
+            "outputFormat": "صيغة الإخراج",
+            "formatText": "ملف نصي (.txt)",
+            "formatPdf": "PDF قابل للبحث",
+            "quality": "الجودة",
+            "qualityLow": "منخفضة (أسرع)",
+            "qualityMedium": "متوسطة (موصى بها)",
+            "qualityHigh": "عالية (أبطأ)",
+            "pageRange": "نطاق الصفحات",
+            "pageRangePlaceholder": "مثال: 1-3، 5، 7",
+            "pageRangeHint": "اتركه فارغًا لجميع الصفحات",
+            "processButton": "بدء OCR",
+            "previewTitle": "معاينة النص المستخرج",
+            "successMessage": "اكتملت عملية OCR بنجاح! انقر على زر التنزيل لحفظ الملف.",
+            "infoTitle": "حول OCR",
+            "infoText": "تقوم تقنية OCR (التعرف الضوئي على الحروف) باستخراج النص من المستندات والصور الممسوحة ضوئيًا. للحصول على أفضل النتائج، استخدم صورًا عالية الجودة وحدد اللغة الصحيحة."
+        },
+        "encryptPdf": {
+            "uploadLabel": "رفع ملف PDF",
+            "uploadDescription": "اسحب وأفلت ملف PDF هنا، أو انقر للتصفح.",
+            "passwordTitle": "إعدادات كلمة المرور",
+            "privacyNotice": "🔒 تتم معالجة كلمات المرور محليًا ولا يتم إرسالها إلى أي خادم.",
+            "userPasswordLabel": "كلمة مرور المستخدم (لفتح المستند)",
+            "userPasswordPlaceholder": "أدخل كلمة مرور فتح ملف PDF",
+            "userPasswordHint": "مطلوبة لفتح ملف PDF وعرضه.",
+            "ownerPasswordLabel": "كلمة مرور المالك (لتغيير الأذونات)",
+            "ownerPasswordPlaceholder": "أدخل كلمة مرور المالك",
+            "ownerPasswordHint": "مطلوبة لتعديل الأذونات أو إزالة التشفير.",
+            "permissionsTitle": "أذونات المستند",
+            "permPrinting": "السماح بالطباعة",
+            "permModifying": "السماح بالتعديل",
+            "permCopying": "السماح بالنسخ",
+            "permAnnotating": "السماح بالتعليقات التوضيحية",
+            "permFillingForms": "السماح بتعبئة النماذج",
+            "permAccessibility": "السماح بإمكانية الوصول",
+            "permAssembly": "السماح بتجميع المستند",
+            "encryptButton": "تشفير ملف PDF",
+            "successMessage": "تم تشفير ملف PDF بنجاح!",
+            "successHint": "احرص على حفظ كلمات المرور في مكان آمن."
+        },
+        "decryptPdf": {
+            "uploadLabel": "رفع ملف PDF",
+            "uploadDescription": "اسحب وأفلت ملف PDF مشفّر.",
+            "passwordTitle": "إدخال كلمة المرور",
+            "privacyNotice": "🔒 تتم معالجة كلمة المرور محليًا ولا يتم إرسالها إلى أي خادم.",
+            "passwordLabel": "كلمة مرور ملف PDF",
+            "passwordPlaceholder": "أدخل كلمة مرور ملف PDF",
+            "passwordHint": "اترك الحقل فارغًا إذا كان الملف يحتوي فقط على قيود كلمة مرور المالك.",
+            "decryptButton": "فك تشفير ملف PDF",
+            "successMessage": "تم فك تشفير ملف PDF بنجاح!",
+            "successHint": "أصبح الملف الآن غير مقفل ويمكن فتحه دون كلمة مرور.",
+            "invalidPassword": "كلمة المرور التي أدخلتها غير صحيحة. يرجى المحاولة مرة أخرى."
+        },
+        "changePermissions": {
+            "uploadLabel": "رفع ملف PDF",
+            "uploadDescription": "اسحب وأفلت ملف PDF هنا، أو انقر للتصفح.",
+            "optionsTitle": "أذونات المستند",
+            "passwordTitle": "إعدادات كلمة المرور",
+            "privacyNotice": "🔒 تتم معالجة كلمات المرور محليًا ولا يتم إرسالها إلى أي خادم.",
+            "currentPasswordLabel": "كلمة المرور الحالية (إذا كان الملف مشفّرًا)",
+            "currentPasswordPlaceholder": "أدخل كلمة المرور الحالية",
+            "currentPasswordHint": "مطلوبة إذا كان ملف PDF محميًا بكلمة مرور.",
+            "newUserPasswordLabel": "كلمة مرور المستخدم الجديدة (لفتح المستند)",
+            "newUserPasswordPlaceholder": "أدخل كلمة مرور المستخدم",
+            "newUserPasswordHint": "سيحتاج المستخدمون إلى هذه الكلمة لفتح الملف.",
+            "newOwnerPasswordLabel": "كلمة مرور المالك الجديدة (لتغيير الأذونات)",
+            "newOwnerPasswordPlaceholder": "أدخل كلمة مرور المالك",
+            "newOwnerPasswordHint": "مطلوبة لفرض قيود الأذونات.",
+            "allowAll": "السماح بالكل",
+            "restrictAll": "تقييد الكل",
+            "info": "ملاحظة: يتطلب فرض الأذونات تشفير ملف PDF. قم بتعيين كلمة مرور للمالك لتفعيل القيود.",
+            "allowPrinting": "السماح بالطباعة",
+            "allowPrintingDesc": "يمكن للمستخدمين طباعة المستند",
+            "allowHighQualityPrinting": "السماح بالطباعة عالية الجودة",
+            "allowHighQualityPrintingDesc": "يمكن للمستخدمين الطباعة بدقة عالية",
+            "allowModifying": "السماح بالتعديل",
+            "allowModifyingDesc": "يمكن للمستخدمين تعديل المستند",
+            "allowCopying": "السماح بالنسخ",
+            "allowCopyingDesc": "يمكن للمستخدمين نسخ النصوص والصور",
+            "allowAnnotating": "السماح بالتعليقات التوضيحية",
+            "allowAnnotatingDesc": "يمكن للمستخدمين إضافة تعليقات وملاحظات",
+            "allowFillingForms": "السماح بتعبئة النماذج",
+            "allowFillingFormsDesc": "يمكن للمستخدمين تعبئة حقول النماذج",
+            "allowAccessibility": "السماح بإمكانية الوصول",
+            "allowAccessibilityDesc": "تمكين برامج قراءة الشاشة من الوصول إلى المحتوى",
+            "allowAssembly": "السماح بتجميع المستند",
+            "allowAssemblyDesc": "يمكن للمستخدمين إدراج أو حذف أو تدوير الصفحات",
+            "applyButton": "تطبيق الأذونات",
+            "successMessage": "تم تحديث الأذونات بنجاح!",
+            "successHint": "لضمان تطبيق الأذونات بالكامل، قم بتشفير الملف بكلمة مرور المالك.",
+            "invalidPassword": "كلمة المرور الحالية غير صحيحة. يرجى المحاولة مرة أخرى.",
+            "passwordRequired": "ملف PDF هذا محمي بكلمة مرور. يرجى إدخال كلمة المرور الحالية للمتابعة."
+        },
+        "removeRestrictions": {
+            "uploadLabel": "رفع ملف PDF",
+            "uploadDescription": "اسحب وأفلت ملف PDF مقيد.",
+            "optionsTitle": "الخيارات",
+            "ownerPasswordLabel": "كلمة مرور المالك (اختياري)",
+            "ownerPasswordPlaceholder": "أدخل كلمة مرور المالك إن وجدت",
+            "ownerPasswordHint": "إذا كان الملف يحتوي على كلمة مرور للمالك، فإن إدخالها يساعد في تحسين النتائج.",
+            "info": "تقوم هذه الأداة بإزالة قيود كلمة مرور المالك التي تمنع الطباعة أو النسخ أو التعديل. لا يمكنها إزالة كلمة مرور المستخدم المطلوبة لفتح الملف.",
+            "warning": "استخدم هذه الأداة فقط مع الملفات التي تملكها أو لديك إذن بتعديلها. إزالة القيود من مواد محمية بحقوق نشر دون إذن قد يشكل مخالفة قانونية.",
+            "removeButton": "إزالة القيود",
+            "successMessage": "تمت إزالة القيود بنجاح!",
+            "originalSize": "الحجم الأصلي:",
+            "newSize": "الحجم الجديد:",
+            "successHint": "يمكن الآن طباعة الملف ونسخه وتعديله دون قيود.",
+            "invalidPassword": "كلمة المرور التي أدخلتها غير صحيحة. يرجى المحاولة مرة أخرى."
+        },
+        "sanitizePdf": {
+            "uploadLabel": "رفع ملف PDF",
+            "uploadDescription": "اسحب وأفلت ملف PDF هنا لتنقيته.",
+            "optionsTitle": "خيارات التنقية",
+            "info": "تقوم عملية التنقية بإزالة المحتوى الضار المحتمل من ملفات PDF، مما يجعلها أكثر أمانًا للمشاركة.",
+            "removeJavaScript": "إزالة JavaScript",
+            "removeAttachments": "إزالة المرفقات",
+            "removeLinks": "إزالة الروابط الخارجية",
+            "removeFormActions": "إزالة إجراءات النماذج",
+            "removeMetadata": "إزالة البيانات الوصفية",
+            "removeAnnotations": "إزالة التعليقات التوضيحية",
+            "sanitizeButton": "تنقية ملف PDF",
+            "successMessage": "تم تنقية ملف PDF بنجاح!",
+            "removedItems": "تمت الإزالة:"
+        },
+        "flattenPdf": {
+            "uploadLabel": "رفع ملف PDF",
+            "uploadDescription": "اسحب وأفلت ملف PDF هنا لتسطيحه.",
+            "flattenButton": "تسطيح ملف PDF",
+            "successMessage": "تم تسطيح ملف PDF بنجاح!"
+        },
+        "removeMetadata": {
+            "uploadLabel": "رفع ملف PDF",
+            "uploadDescription": "اسحب وأفلت ملف PDF هنا، أو انقر للتصفح.",
+            "optionsTitle": "تحديد البيانات الوصفية المراد إزالتها",
+            "selectAll": "تحديد الكل",
+            "deselectAll": "إلغاء التحديد",
+            "info": "تساعد إزالة البيانات الوصفية على حماية خصوصيتك عبر حذف المعلومات التعريفية من ملف PDF.",
+            "title": "العنوان",
+            "author": "المؤلف",
+            "subject": "الموضوع",
+            "keywords": "الكلمات المفتاحية",
+            "creator": "المنشئ",
+            "producer": "المنتِج",
+            "creationDate": "تاريخ الإنشاء",
+            "modificationDate": "تاريخ التعديل",
+            "removeButton": "إزالة البيانات الوصفية",
+            "successMessage": "تمت إزالة البيانات الوصفية بنجاح!",
+            "removedFields": "تمت الإزالة:"
+        },
+        "rotatePdf": {
+            "uploadLabel": "رفع ملف PDF",
+            "uploadDescription": "اسحب وأفلت ملف PDF هنا، أو انقر للتصفح.",
+            "rotateTitle": "تدوير الصفحات",
+            "rotateAll": "تدوير جميع الصفحات",
+            "rotateSelected": "تدوير الصفحات المحددة",
+            "rotateLeft": "تدوير لليسار",
+            "rotateRight": "تدوير لليمين",
+            "applyButton": "تطبيق التدوير",
+            "successMessage": "تم تدوير الصفحات بنجاح!"
+        },
+        "rotateCustom": {
+            "uploadLabel": "رفع ملف PDF",
+            "uploadDescription": "اسحب وأفلت ملف PDF هنا.",
+            "optionsTitle": "تدوير مخصص",
+            "angle": "زاوية التدوير",
+            "angle90": "90°",
+            "angle180": "180°",
+            "angle270": "270°",
+            "pageRange": "نطاق الصفحات",
+            "pageRangePlaceholder": "مثال: 1-3، 5، 7",
+            "applyButton": "تطبيق التدوير",
+            "successMessage": "تم تدوير الصفحات بنجاح!"
+        },
+        "addBlankPage": {
+            "uploadLabel": "رفع ملف PDF",
+            "uploadDescription": "اسحب وأفلت ملف PDF هنا.",
+            "optionsTitle": "إضافة صفحات فارغة",
+            "pageCount": "عدد الصفحات",
+            "insertPosition": "موضع الإدراج",
+            "insertBeginning": "في البداية",
+            "insertEnd": "في النهاية",
+            "insertAfterPage": "بعد صفحة محددة",
+            "afterPageLabel": "بعد الصفحة رقم",
+            "addButton": "إضافة الصفحات",
+            "successMessage": "تمت إضافة الصفحات الفارغة بنجاح!"
+        },
+        "reversePages": {
+            "uploadLabel": "رفع ملف PDF",
+            "uploadDescription": "اسحب وأفلت ملف PDF هنا.",
+            "reverseButton": "عكس ترتيب الصفحات",
+            "successMessage": "تم عكس ترتيب الصفحات بنجاح!"
+        },
+        "alternateMerge": {
+            "uploadLabel": "رفع ملفات PDF",
+            "uploadDescription": "اسحب وأفلت ملفين أو أكثر من ملفات PDF هنا.",
+            "optionsTitle": "خيارات الدمج المتناوب",
+            "startWith": "البدء بـ",
+            "fileA": "الملف الأول",
+            "fileB": "الملف الثاني",
+            "mergeButton": "دمج الصفحات بالتناوب",
+            "successMessage": "تم دمج الملفات بالتناوب بنجاح!"
+        },
+        "combineSinglePage": {
+            "uploadLabel": "رفع ملفات PDF",
+            "uploadDescription": "اسحب وأفلت عدة ملفات PDF، يحتوي كل منها على صفحة واحدة.",
+            "optionsTitle": "خيارات الدمج",
+            "pageSize": "حجم الصفحة",
+            "orientation": "الاتجاه",
+            "combineButton": "دمج الصفحات في ملف واحد",
+            "successMessage": "تم دمج الصفحات بنجاح!"
+        },
+        "pageNumbers": {
+            "uploadLabel": "رفع ملف PDF",
+            "uploadDescription": "اسحب وأفلت ملف PDF هنا.",
+            "optionsTitle": "خيارات ترقيم الصفحات",
+            "position": "الموضع",
+            "topLeft": "أعلى اليسار",
+            "topCenter": "أعلى المنتصف",
+            "topRight": "أعلى اليمين",
+            "bottomLeft": "أسفل اليسار",
+            "bottomCenter": "أسفل المنتصف",
+            "bottomRight": "أسفل اليمين",
+            "format": "تنسيق الترقيم",
+            "startAt": "البدء من",
+            "fontSize": "حجم الخط",
+            "textColor": "لون النص",
+            "pageRange": "نطاق الصفحات",
+            "pageRangePlaceholder": "مثال: 1-3، 5، 7",
+            "addButton": "إضافة أرقام الصفحات",
+            "successMessage": "تمت إضافة أرقام الصفحات بنجاح!"
+        },
+        "watermark": {
+            "uploadLabel": "رفع ملف PDF",
+            "uploadDescription": "اسحب وأفلت ملف PDF هنا.",
+            "optionsTitle": "خيارات العلامة المائية",
+            "type": "نوع العلامة المائية",
+            "text": "نص",
+            "image": "صورة",
+            "textValue": "نص العلامة المائية",
+            "imageUpload": "رفع صورة العلامة المائية",
+            "position": "الموضع",
+            "opacity": "الشفافية",
+            "rotation": "زاوية الدوران",
+            "scale": "الحجم",
+            "repeat": "تكرار على الصفحة",
+            "pageRange": "نطاق الصفحات",
+            "pageRangePlaceholder": "مثال: 1-3، 5، 7",
+            "addButton": "إضافة علامة مائية",
+            "successMessage": "تمت إضافة العلامة المائية بنجاح!"
+        },
+        "headerFooter": {
+            "uploadLabel": "رفع ملف PDF",
+            "uploadDescription": "اسحب وأفلت ملف PDF هنا.",
+            "optionsTitle": "خيارات الرأس والتذييل",
+            "headerText": "نص الرأس",
+            "footerText": "نص التذييل",
+            "position": "الموضع",
+            "fontSize": "حجم الخط",
+            "textColor": "لون النص",
+            "pageRange": "نطاق الصفحات",
+            "pageRangePlaceholder": "مثال: 1-3، 5، 7",
+            "addButton": "إضافة رأس وتذييل",
+            "successMessage": "تمت إضافة الرأس والتذييل بنجاح!"
+        },
+        "invertColors": {
+            "uploadLabel": "رفع ملف PDF",
+            "uploadDescription": "اسحب وأفلت ملف PDF هنا.",
+            "invertButton": "عكس الألوان",
+            "successMessage": "تم عكس ألوان ملف PDF بنجاح!"
+        },
+        "backgroundColor": {
+            "uploadLabel": "رفع ملف PDF",
+            "uploadDescription": "اسحب وأفلت ملف PDF هنا.",
+            "optionsTitle": "لون الخلفية",
+            "colorPicker": "اختيار اللون",
+            "applyButton": "تطبيق لون الخلفية",
+            "successMessage": "تم تغيير لون الخلفية بنجاح!"
+        },
+        "textColor": {
+            "uploadLabel": "رفع ملف PDF",
+            "uploadDescription": "اسحب وأفلت ملف PDF هنا.",
+            "optionsTitle": "لون النص",
+            "colorPicker": "اختيار اللون",
+            "applyButton": "تطبيق لون النص",
+            "successMessage": "تم تغيير لون النص بنجاح!"
+        }
+    }
+}

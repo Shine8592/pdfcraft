@@ -7,7 +7,7 @@
 
 import type { Metadata } from 'next';
 import { siteConfig } from '@/config/site';
-import { type Locale, localeConfig } from '@/lib/i18n/config';
+import { type Locale, localeConfig, locales } from '@/lib/i18n/config';
 import type { Tool, ToolContent } from '@/types/tool';
 
 /**
@@ -52,7 +52,6 @@ export function getAlternateUrls(path: string = ''): Record<string, string> {
   const cleanPath = path.startsWith('/') ? path : `/${path}`;
   const alternates: Record<string, string> = {};
 
-  const locales: Locale[] = ['en', 'ja', 'ko', 'es', 'fr', 'de', 'zh', 'zh-TW', 'pt'];
   for (const locale of locales) {
     alternates[locale] = `${siteConfig.url}/${locale}${cleanPath}`;
   }
@@ -262,6 +261,7 @@ export function getOpenGraphLocale(locale: Locale): string {
     zh: 'zh_CN',
     'zh-TW': 'zh_TW',
     pt: 'pt_BR',
+    ar: 'ar_AR',
   };
   return ogLocaleMap[locale] || 'en_US';
 }
