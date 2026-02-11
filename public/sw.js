@@ -33,23 +33,29 @@ self.addEventListener('activate', (event) => {
 
 self.addEventListener('fetch', (event) => {
     const url = new URL(event.request.url);
-    
+
     // Cache Pyodide assets (WASM, wheels) with cache-first strategy
-    const isPyodideAsset = url.pathname.startsWith('/pymupdf-wasm/') && 
-        (url.pathname.endsWith('.wasm') || 
-         url.pathname.endsWith('.whl') || 
-         url.pathname.endsWith('.tar') ||
-         url.pathname.endsWith('.js'));
-    
+    const isPyodideAsset = url.pathname.startsWith('/pymupdf-wasm/') &&
+        (url.pathname.endsWith('.wasm') ||
+            url.pathname.endsWith('.whl') ||
+            url.pathname.endsWith('.tar') ||
+            url.pathname.endsWith('.js'));
+
     // Cache LibreOffice WASM assets
     const isLibreOfficeAsset = url.pathname.startsWith('/libreoffice-wasm/') &&
         (url.pathname.endsWith('.wasm') ||
-         url.pathname.endsWith('.wasm.gz') ||
-         url.pathname.endsWith('.data') ||
-         url.pathname.endsWith('.data.gz') ||
-         url.pathname.endsWith('.js'));
-    
-    if (isPyodideAsset || isLibreOfficeAsset) {
+            url.pathname.endsWith('.wasm.gz') ||
+            url.pathname.endsWith('.data') ||
+            url.pathname.endsWith('.data.gz') ||
+            url.pathname.endsWith('.js'));
+
+    // Cache CJK font files (used by LibreOffice WASM for Chinese/Japanese/Korean support)
+    const isFontAsset = url.pathname.startsWith('/fonts/') &&
+        (url.pathname.endsWith('.ttf') ||
+            url.pathname.endsWith('.otf') ||
+            url.pathname.endsWith('.woff2'));
+
+    if (isPyodideAsset || isLibreOfficeAsset || isFontAsset) {
         event.respondWith(
             caches.open(CACHE_NAME).then((cache) => {
                 return cache.match(event.request).then((cachedResponse) => {
@@ -67,6 +73,6 @@ self.addEventListener('fetch', (event) => {
         );
         return;
     }
-    
+
     // Pass through all other requests
 });

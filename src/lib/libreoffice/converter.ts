@@ -2,11 +2,29 @@
  * LibreOffice WASM Converter
  * 
  * Uses @matbee/libreoffice-converter for document conversion.
+ * 
+ * Uses BrowserConverter (main-thread mode) instead of WorkerBrowserConverter
+ * because the worker mode has a hardcoded 10-second timeout for the worker
+ * to load and send a "loaded" message. On slower connections or CDN-proxied
+ * deployments, the large browser.worker.global.js file often fails to load
+ * within this window, causing "Worker load timeout" errors.
+ * 
+ * BrowserConverter loads directly on the main thread with a 60-second timeout,
+ * which is more reliable for production deployments.
  */
 
-import { WorkerBrowserConverter } from '@matbee/libreoffice-converter/browser';
+import { BrowserConverter } from '@matbee/libreoffice-converter/browser';
 
 const LIBREOFFICE_PATH = '/libreoffice-wasm/';
+
+/**
+ * CJK font files to inject into LibreOffice WASM virtual filesystem.
+ * These are fetched from /fonts/ and written to /instdir/share/fonts/truetype/
+ * so LibreOffice can render CJK characters correctly.
+ */
+const CJK_FONTS = [
+    { url: '/fonts/NotoSansSC-Regular.ttf', filename: 'NotoSansSC-Regular.ttf' },
+];
 
 export interface LoadProgress {
     phase: 'loading' | 'initializing' | 'converting' | 'complete' | 'ready';
@@ -19,10 +37,11 @@ export type ProgressCallback = (progress: LoadProgress) => void;
 let converterInstance: LibreOfficeConverter | null = null;
 
 export class LibreOfficeConverter {
-    private converter: WorkerBrowserConverter | null = null;
+    private converter: BrowserConverter | null = null;
     private initialized = false;
     private initializing = false;
     private basePath: string;
+    private fontsInstalled = false;
 
     constructor(basePath?: string) {
         this.basePath = basePath || LIBREOFFICE_PATH;
@@ -44,24 +63,23 @@ export class LibreOfficeConverter {
         try {
             progressCallback?.({ phase: 'loading', percent: 0, message: 'Loading conversion engine...' });
 
-            this.converter = new WorkerBrowserConverter({
+            this.converter = new BrowserConverter({
                 sofficeJs: `${this.basePath}soffice.js`,
                 sofficeWasm: `${this.basePath}soffice.wasm`,
                 sofficeData: `${this.basePath}soffice.data`,
                 sofficeWorkerJs: `${this.basePath}soffice.worker.js`,
-                browserWorkerJs: `${this.basePath}browser.worker.global.js`,
                 verbose: false,
                 onProgress: (info: { phase: string; percent: number; message: string }) => {
                     if (progressCallback && !this.initialized) {
                         progressCallback({
                             phase: info.phase as LoadProgress['phase'],
-                            percent: info.percent,
+                            percent: Math.min(info.percent, 90),
                             message: `Loading conversion engine (${Math.round(info.percent)}%)...`
                         });
                     }
                 },
                 onReady: () => {
-                    console.log('[LibreOffice] Ready!');
+                    console.log('[LibreOffice] WASM ready');
                 },
                 onError: (error: Error) => {
                     console.error('[LibreOffice] Error:', error);
@@ -69,12 +87,68 @@ export class LibreOfficeConverter {
             });
 
             await this.converter.initialize();
+
+            // Install CJK fonts into the WASM virtual filesystem
+            progressCallback?.({ phase: 'initializing', percent: 92, message: 'Installing CJK fonts...' });
+            await this.installCJKFonts();
+
             this.initialized = true;
             progressCallback?.({ phase: 'ready', percent: 100, message: 'Conversion engine ready!' });
             progressCallback = undefined;
         } finally {
             this.initializing = false;
         }
+    }
+
+    /**
+     * Install CJK fonts into LibreOffice WASM virtual filesystem.
+     * This is necessary because the default soffice.data doesn't include
+     * CJK fonts, causing Chinese/Japanese/Korean characters to render
+     * as garbled text or empty boxes in converted documents.
+     */
+    private async installCJKFonts(): Promise<void> {
+        if (this.fontsInstalled) return;
+
+        // Access the Emscripten module's virtual filesystem
+        // eslint-disable-next-line @typescript-eslint/no-explicit-any
+        const module = (this.converter as any)?.module;
+        if (!module?.FS) {
+            console.warn('[LibreOffice] Cannot access WASM FS, CJK fonts not installed');
+            return;
+        }
+
+        const FS = module.FS;
+
+        // Ensure the font directories exist
+        const fontDirs = [
+            '/instdir/share/fonts',
+            '/instdir/share/fonts/truetype',
+        ];
+        for (const dir of fontDirs) {
+            try { FS.mkdir(dir); } catch { /* directory may already exist */ }
+        }
+
+        // Fetch and install each CJK font
+        for (const font of CJK_FONTS) {
+            try {
+                console.log(`[LibreOffice] Downloading CJK font: ${font.filename}...`);
+                const response = await fetch(font.url);
+                if (!response.ok) {
+                    console.warn(`[LibreOffice] Failed to fetch font ${font.url}: ${response.status}`);
+                    continue;
+                }
+                const fontBuffer = await response.arrayBuffer();
+                const fontData = new Uint8Array(fontBuffer);
+
+                const fontPath = `/instdir/share/fonts/truetype/${font.filename}`;
+                FS.writeFile(fontPath, fontData);
+                console.log(`[LibreOffice] Installed CJK font: ${fontPath} (${(fontData.length / 1024 / 1024).toFixed(1)}MB)`);
+            } catch (err) {
+                console.warn(`[LibreOffice] Failed to install font ${font.filename}:`, err);
+            }
+        }
+
+        this.fontsInstalled = true;
     }
 
     isReady(): boolean {

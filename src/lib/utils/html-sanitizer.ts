@@ -36,79 +36,64 @@ function isSafeUrl(url: string): boolean {
 
 /**
  * Sanitize HTML string to prevent XSS
- * Uses DOMParser for safe parsing
+ * 
+ * Uses a regex-based approach that works consistently on both 
+ * server and client to avoid React hydration mismatches.
  */
 export function sanitizeHtml(html: string): string {
-  if (typeof window === 'undefined') {
-    // Server-side: strip all HTML tags
-    return html.replace(/<[^>]*>/g, '');
-  }
+  // Process the HTML: keep allowed tags with allowed attributes, strip the rest
+  let result = html;
 
-  const parser = new DOMParser();
-  const doc = parser.parseFromString(html, 'text/html');
-  
-  function sanitizeNode(node: Node): Node | null {
-    if (node.nodeType === Node.TEXT_NODE) {
-      return node.cloneNode(true);
+  // Step 1: Replace disallowed tags but keep their content
+  // Match any HTML tag
+  result = result.replace(/<\/?([a-zA-Z][a-zA-Z0-9]*)\b[^>]*\/?>/g, (match, tagName) => {
+    const tag = tagName.toLowerCase();
+    if (!ALLOWED_TAGS.has(tag)) {
+      return ''; // Strip disallowed tags
     }
-    
-    if (node.nodeType !== Node.ELEMENT_NODE) {
-      return null;
+
+    // For allowed tags, rebuild with only allowed attributes
+    const isClosing = match.startsWith('</');
+    const isSelfClosing = match.endsWith('/>');
+
+    if (isClosing) {
+      return `</${tag}>`;
     }
-    
-    const element = node as Element;
-    const tagName = element.tagName.toLowerCase();
-    
-    // Remove disallowed tags
-    if (!ALLOWED_TAGS.has(tagName)) {
-      const fragment = document.createDocumentFragment();
-      element.childNodes.forEach(child => {
-        const sanitized = sanitizeNode(child);
-        if (sanitized) fragment.appendChild(sanitized);
-      });
-      return fragment;
-    }
-    
-    // Create clean element
-    const cleanElement = document.createElement(tagName);
-    
-    // Copy allowed attributes
+
+    // Extract and filter attributes
+    const attrString = match.replace(/^<[a-zA-Z][a-zA-Z0-9]*\s*/, '').replace(/\/?>$/, '');
     const globalAttrs = ALLOWED_ATTRS['*'];
-    const tagAttrs = ALLOWED_ATTRS[tagName] || new Set();
-    
-    Array.from(element.attributes).forEach(attr => {
-      const attrName = attr.name.toLowerCase();
+    const tagAttrs = ALLOWED_ATTRS[tag] || new Set<string>();
+
+    const cleanAttrs: string[] = [];
+    // Match attribute patterns: name="value", name='value', name=value, or just name
+    const attrRegex = /([a-zA-Z][a-zA-Z0-9-]*)\s*(?:=\s*(?:"([^"]*)"|'([^']*)'|(\S+)))?/g;
+    let attrMatch;
+    while ((attrMatch = attrRegex.exec(attrString)) !== null) {
+      const attrName = attrMatch[1].toLowerCase();
+      const attrValue = attrMatch[2] ?? attrMatch[3] ?? attrMatch[4] ?? '';
+
       if (globalAttrs.has(attrName) || tagAttrs.has(attrName)) {
         // Validate URLs
-        if ((attrName === 'href' || attrName === 'src') && !isSafeUrl(attr.value)) {
-          return;
+        if ((attrName === 'href' || attrName === 'src') && !isSafeUrl(attrValue)) {
+          continue;
         }
+        cleanAttrs.push(`${attrName}="${attrValue.replace(/"/g, '&quot;')}"`);
         // Force safe link behavior
-        if (attrName === 'href' && tagName === 'a') {
-          cleanElement.setAttribute('rel', 'noopener noreferrer');
+        if (attrName === 'href' && tag === 'a') {
+          cleanAttrs.push('rel="noopener noreferrer"');
         }
-        cleanElement.setAttribute(attrName, attr.value);
       }
-    });
-    
-    // Recursively sanitize children
-    element.childNodes.forEach(child => {
-      const sanitized = sanitizeNode(child);
-      if (sanitized) cleanElement.appendChild(sanitized);
-    });
-    
-    return cleanElement;
-  }
-  
-  const fragment = document.createDocumentFragment();
-  doc.body.childNodes.forEach(child => {
-    const sanitized = sanitizeNode(child);
-    if (sanitized) fragment.appendChild(sanitized);
+    }
+
+    const attrs = cleanAttrs.length > 0 ? ' ' + cleanAttrs.join(' ') : '';
+    return isSelfClosing ? `<${tag}${attrs} />` : `<${tag}${attrs}>`;
   });
-  
-  const container = document.createElement('div');
-  container.appendChild(fragment);
-  return container.innerHTML;
+
+  // Step 2: Remove dangerous script/event content that might have been in text
+  result = result.replace(/on[a-zA-Z]+\s*=\s*["'][^"']*["']/gi, '');
+
+  return result;
 }
 
 /**
